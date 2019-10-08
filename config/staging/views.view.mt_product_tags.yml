@@ -215,20 +215,7 @@ display:
           entity_field: weight
           plugin_id: standard
       title: 'Products Tags'
-      header:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: false
-          content:
-            value: 'MORE FROM:'
-            format: basic_html
-          plugin_id: text
+      header: {  }
       footer: {  }
       empty: {  }
       relationships: {  }

@@ -1,11 +1,10 @@
 uuid: 57f7772a-3cfe-4e19-9055-a9c3f56ba339
-langcode: en
+langcode: de
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.rss
     - field.field.node.article.body
-    - field.field.node.article.comment
     - field.field.node.article.field_image
     - field.field.node.article.field_mt_banner_image
     - field.field.node.article.field_mt_slideshow
@@ -29,7 +28,6 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
-  comment: true
   field_image: true
   field_mt_banner_image: true
   field_mt_slideshow: true

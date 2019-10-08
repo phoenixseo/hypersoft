@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.mt_product.body
-    - field.field.node.mt_product.comment
     - field.field.node.mt_product.field_image
     - field.field.node.mt_product.field_mt_banner_image
     - field.field.node.mt_product.field_mt_buy_link
@@ -82,7 +81,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  comment: true
   field_mt_banner_image: true
   field_mt_collections: true
   field_mt_content_tabs: true

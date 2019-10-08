@@ -1,0 +1,45 @@
+uuid: 1fe0529e-7297-4aec-b8f1-6e6e9b4f063c
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sas_image_ref
+    - paragraphs.paragraphs_type.sas_media_object
+  module:
+    - content_translation
+    - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
+id: paragraph.sas_media_object.field_sas_image_ref
+field_name: field_sas_image_ref
+entity_type: paragraph
+bundle: sas_media_object
+label: 'Media Image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -1,8 +1,8 @@
 uuid: 9a112bbb-6a6e-4756-ad5a-90a9217fee20
-langcode: en
+langcode: de
 status: true
 dependencies: {  }
-name: 'Product Tags'
+name: ProduktTags
 vid: mt_product_tags
-description: ''
-weight: 0
+description: 'Produkt Features'
+weight: -3

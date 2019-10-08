@@ -1,0 +1,20 @@
+uuid: 043f0403-ff2c-4bea-9ee5-e29911674e49
+langcode: de
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_impressionen
+field_name: field_impressionen
+entity_type: taxonomy_term
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

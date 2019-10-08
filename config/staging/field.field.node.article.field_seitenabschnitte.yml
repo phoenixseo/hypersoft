@@ -1,0 +1,87 @@
+uuid: 85f20856-5428-499f-b6d7-96a71fce16e1
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_seitenabschnitte
+    - node.type.article
+    - paragraphs.paragraphs_type.sas_bild
+    - paragraphs.paragraphs_type.sas_media_object
+    - paragraphs.paragraphs_type.sas_text
+    - paragraphs.paragraphs_type.sas_video
+    - paragraphs.paragraphs_type.sas_zitat
+  module:
+    - entity_reference_revisions
+id: node.article.field_seitenabschnitte
+field_name: field_seitenabschnitte
+entity_type: node
+bundle: article
+label: Seitenabschnitte
+description: 'Seitenabschnitte (vom Modul Paragraphs) sind kleine Inhaltsbausteine, die sich nahtlos an den Haupttext (Body-Feld) anfügen.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      sas_text: sas_text
+      sas_video: sas_video
+      sas_zitat: sas_zitat
+      sas_media_object: sas_media_object
+      sas_bild: sas_bild
+    target_bundles_drag_drop:
+      mt_collapse:
+        weight: 14
+        enabled: false
+      mt_dropdown:
+        weight: 15
+        enabled: false
+      sas_text:
+        enabled: true
+        weight: 15
+      mt_fancy_linked_image:
+        weight: 16
+        enabled: false
+      sas_video:
+        enabled: true
+        weight: 16
+      sas_zitat:
+        enabled: true
+        weight: 17
+      mt_fancy_tab:
+        weight: 17
+        enabled: false
+      sas_media_object:
+        enabled: true
+        weight: 18
+      mt_featured_linked_text_tile:
+        weight: 18
+        enabled: false
+      mt_highlight:
+        weight: 19
+        enabled: false
+      mt_icon_features:
+        weight: 20
+        enabled: false
+      mt_main_slideshow_slide:
+        weight: 21
+        enabled: false
+      mt_map_location:
+        weight: 22
+        enabled: false
+      mt_media_tab:
+        weight: 23
+        enabled: false
+      mt_tab:
+        weight: 24
+        enabled: false
+      mt_video_gallery_slide:
+        weight: 25
+        enabled: false
+      sas_bild:
+        enabled: true
+        weight: 26
+field_type: entity_reference_revisions

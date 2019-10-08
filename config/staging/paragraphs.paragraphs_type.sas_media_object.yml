@@ -1,0 +1,11 @@
+uuid: 0f433f2c-b385-4d09-92a0-5eb0275a5d1d
+langcode: de
+status: true
+dependencies:
+  content:
+    - 'file:file:ab8c4b8f-c0b3-4a22-8e6b-063dc0b042c3'
+id: sas_media_object
+label: 'SAS: Media Object'
+icon_uuid: ab8c4b8f-c0b3-4a22-8e6b-063dc0b042c3
+description: 'SAS: Media Object'
+behavior_plugins: {  }

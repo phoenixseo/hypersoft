@@ -1,12 +1,13 @@
 uuid: 45916f93-0151-4ad1-bbe9-9271b1d33790
-langcode: en
+langcode: de
 status: true
 dependencies:
   module:
     - editor
+    - lazy
 _core:
   default_config_hash: hewPmBgni9jlDK_IjLxUx1HsTbinK-hdl0lOwjbteIY
-name: 'Full HTML'
+name: 'WYSIWYG: Vollständiges HTML'
 format: full_html
 weight: 1
 filters:
@@ -33,4 +34,19 @@ filters:
     provider: editor
     status: true
     weight: 11
+    settings: {  }
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: false
+    weight: -10
+    settings:
+      allowed_html: '<em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <s> <sup> <sub> <a href hreflang class="link--bordered link--hover-style-2 link--hover-style-3"> <img src alt data-entity-type data-entity-uuid data-align data-caption class="img--bordered"> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <hr> <p class="large highlighted bottom-spacing-large top-spacing-large"> <h1> <pre>'
+      filter_html_help: true
+      filter_html_nofollow: false
+  lazy_filter:
+    id: lazy_filter
+    provider: lazy
+    status: true
+    weight: 20
     settings: {  }

@@ -1,0 +1,23 @@
+uuid: 0a128c06-3de9-4e79-847c-25c8b255d675
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_connections
+    - node.type.page
+id: node.page.field_connections
+field_name: field_connections
+entity_type: node
+bundle: page
+label: Connections
+description: 'Soll auf der Connections-Seite angezeigt werden.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

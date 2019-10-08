@@ -1,0 +1,22 @@
+uuid: 5f38f5b3-4451-409a-a78d-171076949472
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.branche
+  module:
+    - text
+id: node.branche.body
+field_name: body
+entity_type: node
+bundle: branche
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

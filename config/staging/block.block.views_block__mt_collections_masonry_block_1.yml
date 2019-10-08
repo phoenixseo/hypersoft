@@ -1,0 +1,30 @@
+uuid: 7dd20440-5ad6-49a1-9c40-edf0f094a071
+langcode: de
+status: true
+dependencies:
+  config:
+    - views.view.mt_collections_masonry
+  module:
+    - system
+    - views
+  theme:
+    - corporateplus
+id: views_block__mt_collections_masonry_block_1
+theme: corporateplus
+region: content_top
+weight: 0
+provider: null
+plugin: 'views_block:mt_collections_masonry-block_1'
+settings:
+  id: 'views_block:mt_collections_masonry-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: '20'
+visibility:
+  request_path:
+    id: request_path
+    pages: /prod
+    negate: false
+    context_mapping: {  }

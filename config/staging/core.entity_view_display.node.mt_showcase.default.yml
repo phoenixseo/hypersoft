@@ -3,9 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_display.comment.comment.default
     - field.field.node.mt_showcase.body
-    - field.field.node.mt_showcase.comment
     - field.field.node.mt_showcase.field_image
     - field.field.node.mt_showcase.field_mt_banner_image
     - field.field.node.mt_showcase.field_mt_clients_tags
@@ -20,9 +18,9 @@ dependencies:
     - image.style.large
     - node.type.mt_showcase
   module:
-    - comment
     - entity_reference_revisions
     - image
+    - lazy
     - text
     - user
     - video_embed_field
@@ -38,22 +36,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  comment:
-    weight: 9
-    label: hidden
-    settings:
-      pager_id: 0
-      view_mode: default
-    third_party_settings: {  }
-    type: comment_default
-    region: content
   field_image:
     weight: 2
     label: hidden
     settings:
       image_style: large
       image_link: file
-    third_party_settings: {  }
+    third_party_settings:
+      lazy:
+        lazy_image: '1'
     type: image
     region: content
   field_mt_clients_tags:
@@ -102,14 +93,18 @@ content:
     settings:
       image_style: large
       link_image_to: provider
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: false
     third_party_settings: {  }
-    type: video_embed_field_thumbnail
+    type: video_embed_field_lazyload
     region: content
   links:
     weight: 8
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   field_mt_banner_image: true
   field_mt_slideshow: true

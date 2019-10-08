@@ -1,0 +1,36 @@
+uuid: 69d3a966-c556-4107-b985-1b7d2487ade4
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sas_bild.field_sas_image_ref
+    - field.field.paragraph.sas_bild.field_sas_shorttext
+    - paragraphs.paragraphs_type.sas_bild
+  module:
+    - image
+    - lazy
+id: paragraph.sas_bild.default
+targetEntityType: paragraph
+bundle: sas_bild
+mode: default
+content:
+  field_sas_image_ref:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings:
+      lazy:
+        lazy_image: '1'
+    type: image
+    region: content
+  field_sas_shorttext:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

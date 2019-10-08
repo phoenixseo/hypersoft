@@ -1,5 +1,5 @@
 uuid: 1a694062-9fb4-48e0-aaab-fe191fa5fa92
-langcode: en
+langcode: de
 status: true
 dependencies:
   config:
@@ -462,7 +462,7 @@ display:
             more_link: false
             more_link_text: ''
             more_link_path: ''
-            strip_tags: false
+            strip_tags: true
             trim: true
             preserve_tags: ''
             html: true
@@ -1066,7 +1066,7 @@ display:
         type: default
         options:
           grouping: {  }
-          row_class: 'col-md-4 col-sm-6'
+          row_class: 'col-md-3 col-sm-6'
           default_row_class: true
       defaults:
         style: false
@@ -1420,7 +1420,7 @@ display:
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
-      block_description: 'Products Grid 3 Col'
+      block_description: 'Products Grid'
       header:
         area:
           id: area
@@ -1436,10 +1436,10 @@ display:
             format: full_html
           plugin_id: text
       pager:
-        type: some
+        type: none
         options:
-          items_per_page: 3
           offset: 0
+      block_category: Product
     cache_metadata:
       max-age: -1
       contexts:
@@ -1490,6 +1490,7 @@ display:
         enabled: true
         expanded: false
       exposed_block: true
+      enabled: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -1553,6 +1554,7 @@ display:
             offset: false
             offset_label: Offset
           quantity: 9
+      enabled: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -1594,6 +1596,7 @@ display:
         enabled: true
         expanded: false
       exposed_block: true
+      enabled: false
     cache_metadata:
       max-age: -1
       contexts:

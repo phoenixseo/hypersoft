@@ -1,0 +1,19 @@
+uuid: cbe3b242-3795-44aa-8f04-726d7d561510
+langcode: de
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_sas_text
+field_name: field_sas_text
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

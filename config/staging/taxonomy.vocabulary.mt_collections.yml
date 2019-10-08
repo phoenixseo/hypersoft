@@ -1,8 +1,8 @@
 uuid: 430a0a69-faf8-4d49-91bb-847224e28e54
-langcode: en
+langcode: de
 status: true
 dependencies: {  }
-name: 'Product Groups'
+name: ProduktGruppe
 vid: mt_collections
-description: ''
-weight: 0
+description: 'Produkt Kategorisierung'
+weight: -4

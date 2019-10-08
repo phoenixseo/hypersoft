@@ -1,0 +1,8 @@
+uuid: 2a113d6f-a670-48f7-8261-0c7dd90d60a4
+langcode: de
+status: true
+dependencies: {  }
+id: theme
+label: Theme
+description: 'Theme Menü'
+locked: false

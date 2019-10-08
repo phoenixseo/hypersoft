@@ -6,7 +6,6 @@ dependencies:
     - 'block_content:mt_background_image_block:76ebbc61-2adf-4137-a427-ed7f09fb2975'
   module:
     - block_content
-    - system
   theme:
     - corporateplus
 id: testimonialscarousel_2
@@ -19,13 +18,8 @@ settings:
   id: 'block_content:76ebbc61-2adf-4137-a427-ed7f09fb2975'
   label: 'Testimonials Carousel'
   provider: block_content
-  label_display: '0'
+  label_display: visible
   status: true
   info: ''
   view_mode: full
-visibility:
-  request_path:
-    id: request_path
-    pages: /blocks
-    negate: false
-    context_mapping: {  }
+visibility: {  }

@@ -1,20 +1,44 @@
 uuid: 42c86e3c-5f41-4f65-97c6-5bdd0dd1dc0f
-langcode: en
+langcode: de
 status: true
 dependencies:
   config:
+    - entity_browser.browser.browse_files_modal
     - field.field.node.page.body
+    - field.field.node.page.field_connections
+    - field.field.node.page.field_image
+    - field.field.node.page.field_mehr_wissen
     - field.field.node.page.field_mt_banner_image
     - field.field.node.page.field_mt_slideshow
     - field.field.node.page.field_mt_slideshow_image
     - field.field.node.page.field_mt_slideshow_text
     - field.field.node.page.field_mt_subheader_body
-    - image.style.thumbnail
+    - field.field.node.page.field_seitenabschnitte
     - node.type.page
   module:
-    - image
+    - entity_browser
+    - field_group
+    - paragraphs
     - path
     - text
+third_party_settings:
+  field_group:
+    group_slideshow:
+      children:
+        - field_mt_slideshow
+        - field_mt_slideshow_text
+        - field_mt_slideshow_image
+      parent_name: ''
+      weight: 9
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        description: 'Einstellungen für die Fronpage Slideshow'
+        open: false
+        required_fields: true
+      label: Slideshow
+      region: content
 _core:
   default_config_hash: KSvzyFhdLuxniTsunUnUfpfMmod2l57GibtVjL8ymHM
 id: node.page.default
@@ -24,7 +48,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 3
+    weight: 6
     settings:
       rows: 9
       summary_rows: 3
@@ -33,35 +57,77 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 9
+    weight: 11
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_mt_banner_image:
+  field_connections:
     weight: 1
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      display_label: true
     third_party_settings: {  }
-    type: image_image
+    type: boolean_checkbox
+    region: content
+  field_image:
+    weight: 5
+    settings:
+      entity_browser: browse_files_modal
+      field_widget_remove: true
+      selection_mode: selection_edit
+      preview_image_style: file_entity_browser_thumbnail
+      field_widget_edit: true
+      field_widget_replace: false
+      open: false
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_browser_file
+    region: content
+  field_mehr_wissen:
+    weight: 8
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_mt_banner_image:
+    weight: 2
+    settings:
+      entity_browser: browse_files_modal
+      field_widget_remove: true
+      selection_mode: selection_edit
+      preview_image_style: file_entity_browser_thumbnail
+      field_widget_edit: true
+      field_widget_replace: false
+      open: false
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_browser_file
     region: content
   field_mt_slideshow:
-    weight: 7
+    weight: 11
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
   field_mt_slideshow_image:
-    weight: 4
+    weight: 13
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      entity_browser: browse_files_modal
+      field_widget_remove: true
+      selection_mode: selection_edit
+      preview_image_style: file_entity_browser_thumbnail
+      field_widget_edit: true
+      field_widget_replace: false
+      open: false
+      view_mode: default
     third_party_settings: {  }
-    type: image_image
+    type: entity_browser_file
     region: content
   field_mt_slideshow_text:
-    weight: 6
+    weight: 12
     settings:
       rows: 5
       placeholder: ''
@@ -69,7 +135,7 @@ content:
     type: text_textarea
     region: content
   field_mt_subheader_body:
-    weight: 2
+    weight: 4
     settings:
       rows: 9
       summary_rows: 3
@@ -77,16 +143,35 @@ content:
     third_party_settings: {  }
     type: text_textarea_with_summary
     region: content
+  field_seitenabschnitte:
+    weight: 7
+    settings:
+      title: Seitenabschnitt
+      title_plural: Seitenabschnitte
+      edit_mode: open
+      closed_mode: preview
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: modal
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: '0'
+    third_party_settings: {  }
+    type: paragraphs
+    region: content
   langcode:
     type: language_select
-    weight: 2
+    weight: 3
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 12
+    weight: 15
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -94,21 +179,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 10
+    weight: 12
     third_party_settings: {  }
     region: content
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 121
+    weight: 16
     third_party_settings: {  }
     region: content
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 11
+    weight: 14
     third_party_settings: {  }
     region: content
   title:
@@ -119,9 +204,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
+  translation:
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 8
+    weight: 10
     settings:
       match_operator: CONTAINS
       size: 60

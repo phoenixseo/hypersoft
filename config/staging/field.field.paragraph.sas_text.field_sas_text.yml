@@ -1,0 +1,21 @@
+uuid: 28ce55d0-196d-4fb4-8610-004123acfea5
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sas_text
+    - paragraphs.paragraphs_type.sas_text
+  module:
+    - text
+id: paragraph.sas_text.field_sas_text
+field_name: field_sas_text
+entity_type: paragraph
+bundle: sas_text
+label: 'sas text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -14,6 +14,7 @@ dependencies:
     - node.type.mt_testimonial
   module:
     - image
+    - lazy
     - text
     - user
 id: node.mt_testimonial.default
@@ -42,14 +43,16 @@ content:
     settings:
       image_style: mt_testimonial_image
       image_link: ''
-    third_party_settings: {  }
+    third_party_settings:
+      lazy:
+        lazy_image: '1'
     type: image
     region: content
   links:
     weight: 3
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   field_mt_banner_image: true
   field_mt_slideshow: true

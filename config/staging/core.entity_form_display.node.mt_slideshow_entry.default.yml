@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.browse_files_modal
     - field.field.node.mt_slideshow_entry.field_mt_bg_video_vimeo
     - field.field.node.mt_slideshow_entry.field_mt_bg_video_volume
     - field.field.node.mt_slideshow_entry.field_mt_bg_video_youtube
@@ -10,10 +11,9 @@ dependencies:
     - field.field.node.mt_slideshow_entry.field_mt_slideshow_image
     - field.field.node.mt_slideshow_entry.field_mt_slideshow_path
     - field.field.node.mt_slideshow_entry.field_mt_slideshow_text
-    - image.style.thumbnail
     - node.type.mt_slideshow_entry
   module:
-    - image
+    - entity_browser
     - path
     - text
 id: node.mt_slideshow_entry.default
@@ -60,10 +60,16 @@ content:
   field_mt_slideshow_image:
     weight: 1
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      entity_browser: browse_files_modal
+      field_widget_remove: true
+      selection_mode: selection_edit
+      preview_image_style: file_entity_browser_thumbnail
+      field_widget_edit: true
+      field_widget_replace: false
+      open: false
+      view_mode: default
     third_party_settings: {  }
-    type: image_image
+    type: entity_browser_file
     region: content
   field_mt_slideshow_path:
     weight: 7

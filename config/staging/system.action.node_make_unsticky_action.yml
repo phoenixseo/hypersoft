@@ -1,5 +1,5 @@
 uuid: c3abba57-d2cd-4984-9348-4304ae98281b
-langcode: en
+langcode: de
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: lDM9mvIGAu8Sw8rt-uCO4Sr7yX5VPrDPxYcawkbKd6k
 id: node_make_unsticky_action
-label: 'Make content unsticky'
+label: 'Hervorhebung des Inhalts aufheben'
 type: node
 plugin: node_make_unsticky_action
 configuration: {  }

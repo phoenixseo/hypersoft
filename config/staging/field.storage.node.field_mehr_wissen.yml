@@ -1,0 +1,19 @@
+uuid: 14b16b60-9b8d-4953-8aa2-8ea4cd3937dd
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_mehr_wissen
+field_name: field_mehr_wissen
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

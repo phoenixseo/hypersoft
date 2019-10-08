@@ -1,0 +1,28 @@
+uuid: f8337deb-2e53-423a-8894-bbbcb43b6307
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sas_video.field_sas_video
+    - paragraphs.paragraphs_type.sas_video
+  module:
+    - video_embed_field
+id: paragraph.sas_video.default
+targetEntityType: paragraph
+bundle: sas_video
+mode: default
+content:
+  field_sas_video:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      link_image_to: provider
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: false
+    third_party_settings: {  }
+    type: video_embed_field_lazyload
+    region: content
+hidden: {  }

@@ -1,11 +1,10 @@
 uuid: f58e136a-3bf6-455e-b04d-85bb5a366486
-langcode: en
+langcode: de
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.article.body
-    - field.field.node.article.comment
     - field.field.node.article.field_image
     - field.field.node.article.field_mt_banner_image
     - field.field.node.article.field_mt_slideshow
@@ -56,7 +55,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  comment: true
   field_mt_banner_image: true
   field_mt_slideshow: true
   field_mt_slideshow_image: true

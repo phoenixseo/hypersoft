@@ -1,0 +1,25 @@
+uuid: 415c17ce-a1d3-4ce0-afec-eb93030d54c0
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sas_text.field_sas_text
+    - paragraphs.paragraphs_type.sas_text
+  module:
+    - text
+id: paragraph.sas_text.default
+targetEntityType: paragraph
+bundle: sas_text
+mode: default
+content:
+  field_sas_text:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

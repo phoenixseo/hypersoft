@@ -1,5 +1,5 @@
 uuid: ccc14031-25d9-4611-87b5-a7a5c3c9ccea
-langcode: en
+langcode: de
 status: true
 dependencies:
   config:
@@ -22,11 +22,6 @@ settings:
   provider: system
   label_display: '0'
   level: 1
-  depth: 0
+  depth: 1
   expand_all_items: false
-visibility:
-  request_path:
-    id: request_path
-    pages: /node/60
-    negate: true
-    context_mapping: {  }
+visibility: {  }

@@ -6,7 +6,6 @@ dependencies:
     - 'block_content:mt_dropdowns_block:18dc1432-7c77-4b0b-b804-5bd46ab9769a'
   module:
     - block_content
-    - system
   theme:
     - corporateplus
 id: headerdropdowns
@@ -23,9 +22,4 @@ settings:
   status: true
   info: ''
   view_mode: full
-visibility:
-  request_path:
-    id: request_path
-    pages: "/node/17\r\n/node/40\r\n/node/53\r\n/node/54"
-    negate: true
-    context_mapping: {  }
+visibility: {  }

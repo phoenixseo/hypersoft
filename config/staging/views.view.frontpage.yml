@@ -1,5 +1,5 @@
 uuid: 31df822d-0b0a-440f-a3c7-ed18b2060c62
-langcode: en
+langcode: de
 status: true
 dependencies:
   config:
@@ -11,9 +11,9 @@ dependencies:
 _core:
   default_config_hash: rwRoOr3DiobxwoWSmtUcna1LQz5_HxHvS7H5dl7_-Uo
 id: frontpage
-label: Frontpage
+label: Startseite
 module: node
-description: 'All content promoted to the front page.'
+description: 'Inhalt, der auf der Startseite veröffentlicht ist.'
 tag: default
 base_table: node_field_data
 base_field: nid
@@ -255,7 +255,7 @@ display:
   feed_1:
     display_plugin: feed
     id: feed_1
-    display_title: Feed
+    display_title: Newsfeed
     position: 2
     display_options:
       sitename_title: true
@@ -295,7 +295,7 @@ display:
         enabled: true
         expanded: false
     display_plugin: page
-    display_title: Page
+    display_title: Seite
     id: page_1
     position: 1
     cache_metadata:

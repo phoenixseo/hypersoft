@@ -1,5 +1,5 @@
 uuid: e0fbdad5-cb3a-4aff-b69c-c045bd4c825f
-langcode: en
+langcode: de
 status: true
 dependencies:
   module:
@@ -8,9 +8,9 @@ dependencies:
 _core:
   default_config_hash: tDcmzGfShE0XJbfwJzyA6lJTUYC6X4iVu887dgoFfDg
 id: content_recent
-label: 'Recent content'
+label: 'Neuester Inhalt'
 module: node
-description: 'Recent content.'
+description: 'Neuer Inhalt.'
 tag: default
 base_table: node_field_data
 base_field: nid
@@ -258,7 +258,7 @@ display:
           entity_type: node
           entity_field: changed
           plugin_id: date
-      title: 'Recent content'
+      title: 'Neuester Inhalt'
       header: {  }
       footer: {  }
       empty:
@@ -271,7 +271,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'No content available.'
+          content: 'Kein Inhalt verfügbar.'
           plugin_id: text_custom
       relationships:
         uid:
@@ -289,7 +289,7 @@ display:
       display_extenders: {  }
       use_more: false
       use_more_always: false
-      use_more_text: More
+      use_more_text: Zusätzlich
       link_url: ''
       link_display: '0'
     cache_metadata:

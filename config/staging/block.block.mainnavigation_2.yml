@@ -6,7 +6,6 @@ dependencies:
     - system.menu.main
   module:
     - superfish
-    - system
   theme:
     - corporateplus
 id: mainnavigation_2
@@ -21,7 +20,8 @@ settings:
   provider: superfish
   label_display: '0'
   level: '1'
-  depth: '0'
+  depth: '1'
+  expand_all_items: false
   menu_type: horizontal
   style: none
   arrow: 1
@@ -68,9 +68,4 @@ settings:
   custom_list_class: ''
   custom_item_class: ''
   custom_link_class: ''
-visibility:
-  request_path:
-    id: request_path
-    pages: "/node/54\r\n/node/17\r\n/node/63\r\n/mega-menu"
-    negate: true
-    context_mapping: {  }
+visibility: {  }

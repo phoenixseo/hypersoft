@@ -1,0 +1,23 @@
+uuid: 38fac85f-068a-49d7-898c-da88e9af3ff4
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_klicks
+    - taxonomy.vocabulary.keywords
+id: taxonomy_term.keywords.field_klicks
+field_name: field_klicks
+entity_type: taxonomy_term
+bundle: keywords
+label: Klicks
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

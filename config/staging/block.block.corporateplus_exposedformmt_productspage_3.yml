@@ -1,11 +1,10 @@
 uuid: 6f80a704-521a-4660-ad7b-459906fb31f5
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.mt_products
   module:
-    - system
     - views
   theme:
     - corporateplus
@@ -19,11 +18,6 @@ settings:
   id: 'views_exposed_filter_block:mt_products-page_3'
   label: ''
   provider: views
-  label_display: '0'
+  label_display: visible
   views_label: ''
-visibility:
-  request_path:
-    id: request_path
-    pages: /products-2-col
-    negate: false
-    context_mapping: {  }
+visibility: {  }

@@ -1,11 +1,10 @@
 uuid: 1e92e88e-cee9-429a-bee0-5662c311b6ce
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.mt_slideshow_full_width
   module:
-    - system
     - views
   theme:
     - corporateplus
@@ -22,9 +21,4 @@ settings:
   label_display: '0'
   views_label: ''
   items_per_page: none
-visibility:
-  request_path:
-    id: request_path
-    pages: /blocks
-    negate: false
-    context_mapping: {  }
+visibility: {  }

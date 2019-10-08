@@ -1,0 +1,38 @@
+uuid: 1d1d87f8-5bb2-4696-83e8-acee1e52acf8
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.landingpage.body
+    - field.field.node.landingpage.field_keywords
+    - node.type.landingpage
+  module:
+    - text
+    - user
+id: node.landingpage.default
+targetEntityType: node
+bundle: landingpage
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_keywords:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

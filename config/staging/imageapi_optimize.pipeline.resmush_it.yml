@@ -1,0 +1,15 @@
+uuid: a44aad96-2183-42d1-a378-de22069b4569
+langcode: de
+status: true
+dependencies:
+  module:
+    - imageapi_optimize_resmushit
+name: resmush_it
+label: 'ReSmush it'
+processors:
+  4c292a26-cd49-4394-8bba-01336070b1f9:
+    uuid: 4c292a26-cd49-4394-8bba-01336070b1f9
+    id: resmushit
+    weight: 1
+    data:
+      quality: 75

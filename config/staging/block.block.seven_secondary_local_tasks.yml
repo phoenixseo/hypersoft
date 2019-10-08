@@ -1,5 +1,5 @@
 uuid: 1de34cc7-105e-4cdc-bba2-d5e9ccc619c4
-langcode: en
+langcode: de
 status: true
 dependencies:
   theme:
@@ -14,7 +14,7 @@ provider: null
 plugin: local_tasks_block
 settings:
   id: local_tasks_block
-  label: 'Secondary tabs'
+  label: 'Sekundäre Reiter'
   provider: core
   label_display: '0'
   primary: false

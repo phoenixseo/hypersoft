@@ -3,9 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.browse_files_modal
+    - entity_browser.browser.media_entity_browser_modal
     - field.field.node.mt_product.body
-    - field.field.node.mt_product.comment
+    - field.field.node.mt_product.field_file_downloads
     - field.field.node.mt_product.field_image
+    - field.field.node.mt_product.field_kundenstimmen
     - field.field.node.mt_product.field_mt_banner_image
     - field.field.node.mt_product.field_mt_buy_link
     - field.field.node.mt_product.field_mt_collections
@@ -23,16 +26,151 @@ dependencies:
     - field.field.node.mt_product.field_mt_slideshow_text
     - field.field.node.mt_product.field_mt_subheader_body
     - field.field.node.mt_product.field_mt_video
-    - image.style.thumbnail
+    - field.field.node.mt_product.field_produkt_aktiv
+    - field.field.node.mt_product.field_seitenabschnitte
     - node.type.mt_product
   module:
-    - comment
-    - image
+    - entity_browser
+    - field_group
     - link
     - paragraphs
     - path
     - text
     - video_embed_field
+third_party_settings:
+  field_group:
+    group_slideshow:
+      children:
+        - field_mt_slideshow
+        - field_mt_slideshow_text
+        - field_mt_slideshow_image
+      parent_name: ''
+      weight: 16
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: Slideshow
+      region: content
+    group_highlights:
+      children:
+        - field_mt_highlight
+      parent_name: ''
+      weight: 7
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        description: 'Highlights sind kurze, knackige Inhalte, z.B. für Kernfeatures mit Bild, Kurztext und ggf. Link. Diese Einheiten werden jeweils abwechselnd mit Bild + Text | Text + Bild untereinander dargestellt.'
+        open: false
+        required_fields: true
+      label: Highlights
+      region: content
+    group_tabs:
+      children:
+        - field_mt_content_tabs
+      parent_name: ''
+      weight: 13
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        description: "Tabs werden unten am Ende des Inhalts angezeigt: Tab1 |\_Tab2 | Tab3. Nur 1 Inhalt ist hierbei jeweils aktiv (tabbed navigation)"
+        open: false
+        required_fields: true
+      label: Tabs
+      region: content
+    group_seitenabschnitte:
+      children:
+        - field_seitenabschnitte
+      parent_name: ''
+      weight: 10
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        description: 'Seitenabschnitte (SAS): selbst definierte Inhalts-Bestandteile.'
+        open: false
+        required_fields: true
+      label: Seitenabschnitte
+      region: content
+    group_produkt_daten:
+      children:
+        - field_mt_product_code
+        - field_mt_product_availability
+        - field_mt_price
+        - field_mt_buy_link
+      parent_name: ''
+      weight: 11
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        description: 'Weitere Produkt-Daten. Nicht unbedingt auf Hypersoft-Produkte zutreffend. Verwendungszweck noch frei.'
+        open: false
+        required_fields: true
+      label: 'Produkt Daten'
+      region: content
+    group_preistabelle:
+      children:
+        - field_mt_pricing_table_item
+        - field_mt_most_popular
+      parent_name: ''
+      weight: 14
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        description: 'Die Infos aus diesen Feldern können in einer Preisübersichtsseite angezeigt werden. Verwendung derzeit noch frei...'
+        open: false
+        required_fields: true
+      label: Preistabelle
+      region: content
+    group_banner:
+      children:
+        - field_mt_banner_image
+      parent_name: ''
+      weight: 3
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        description: 'Ein Bild, das hier vorgegeben wird, wird oben auf der Seite als Banner angezeigt werden.'
+        open: false
+        required_fields: true
+      label: Banner
+      region: content
+    group_kategorisierung:
+      children:
+        - field_mt_collections
+        - field_mt_products_tags
+      parent_name: ''
+      weight: 2
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Kategorisierung
+      region: content
+    group_kundenstimmen:
+      children:
+        - field_kundenstimmen
+      parent_name: ''
+      weight: 12
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: Kundenstimmen
+      region: content
 id: node.mt_product.default
 targetEntityType: node
 bundle: mt_product
@@ -40,51 +178,49 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 5
+    weight: 8
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
     region: content
-  comment:
-    weight: 25
-    settings: {  }
-    third_party_settings: {  }
-    type: comment_default
-    region: content
   created:
     type: datetime_timestamp
-    weight: 21
+    weight: 18
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_file_downloads:
+    weight: 26
+    settings:
+      entity_browser: media_entity_browser_modal
+      field_widget_display: label
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_replace: false
+      open: false
+      field_widget_display_settings: {  }
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
   field_image:
-    weight: 3
+    weight: 6
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      entity_browser: browse_files_modal
+      field_widget_remove: true
+      selection_mode: selection_edit
+      preview_image_style: file_entity_browser_thumbnail
+      field_widget_edit: true
+      field_widget_replace: false
+      open: false
+      view_mode: default
     third_party_settings: {  }
-    type: image_image
+    type: entity_browser_file
     region: content
-  field_mt_banner_image:
-    weight: 1
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
-    region: content
-  field_mt_buy_link:
-    weight: 12
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
-    region: content
-  field_mt_collections:
-    weight: 9
+  field_kundenstimmen:
+    weight: 22
     settings:
       match_operator: CONTAINS
       size: 60
@@ -92,9 +228,37 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
+  field_mt_banner_image:
+    weight: 17
+    settings:
+      entity_browser: browse_files_modal
+      field_widget_remove: true
+      selection_mode: selection_edit
+      preview_image_style: file_entity_browser_thumbnail
+      field_widget_edit: true
+      field_widget_replace: false
+      open: false
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_browser_file
+    region: content
+  field_mt_buy_link:
+    weight: 15
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_mt_collections:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
   field_mt_content_tabs:
     type: entity_reference_paragraphs
-    weight: 13
+    weight: 16
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -106,33 +270,39 @@ content:
     region: content
   field_mt_highlight:
     type: entity_reference_paragraphs
-    weight: 4
+    weight: 8
     settings:
       title: Paragraph
       title_plural: Paragraphs
-      edit_mode: open
+      edit_mode: closed
       add_mode: dropdown
       form_display_mode: default
-      default_paragraph_type: ''
+      default_paragraph_type: mt_highlight
     third_party_settings: {  }
     region: content
   field_mt_landscape_image:
-    weight: 16
+    weight: 15
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      entity_browser: browse_files_modal
+      field_widget_remove: true
+      selection_mode: selection_edit
+      preview_image_style: file_entity_browser_thumbnail
+      field_widget_edit: true
+      field_widget_replace: false
+      open: false
+      view_mode: default
     third_party_settings: {  }
-    type: image_image
+    type: entity_browser_file
     region: content
   field_mt_most_popular:
-    weight: 15
+    weight: 16
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
   field_mt_price:
-    weight: 11
+    weight: 14
     settings:
       size: 60
       placeholder: ''
@@ -148,13 +318,13 @@ content:
     type: string_textfield
     region: content
   field_mt_product_availability:
-    weight: 8
+    weight: 13
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_mt_product_code:
-    weight: 7
+    weight: 12
     settings:
       size: 60
       placeholder: ''
@@ -162,7 +332,7 @@ content:
     type: string_textfield
     region: content
   field_mt_products_tags:
-    weight: 10
+    weight: 3
     settings:
       match_operator: CONTAINS
       size: 60
@@ -171,22 +341,28 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_mt_slideshow:
-    weight: 19
+    weight: 22
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
   field_mt_slideshow_image:
-    weight: 17
+    weight: 24
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      entity_browser: browse_files_modal
+      field_widget_remove: true
+      selection_mode: selection_edit
+      preview_image_style: file_entity_browser_thumbnail
+      field_widget_edit: true
+      field_widget_replace: false
+      open: false
+      view_mode: default
     third_party_settings: {  }
-    type: image_image
+    type: entity_browser_file
     region: content
   field_mt_slideshow_text:
-    weight: 18
+    weight: 23
     settings:
       rows: 5
       placeholder: ''
@@ -194,7 +370,7 @@ content:
     type: text_textarea
     region: content
   field_mt_subheader_body:
-    weight: 2
+    weight: 5
     settings:
       rows: 9
       summary_rows: 3
@@ -203,21 +379,47 @@ content:
     type: text_textarea_with_summary
     region: content
   field_mt_video:
-    weight: 6
+    weight: 9
     settings: {  }
     third_party_settings: {  }
     type: video_embed_field_textfield
     region: content
+  field_produkt_aktiv:
+    weight: 1
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_seitenabschnitte:
+    weight: 16
+    settings:
+      title: Seitenabschnitt
+      title_plural: Seitenabschnitte
+      edit_mode: closed
+      closed_mode: preview
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: modal
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: '0'
+    third_party_settings: {  }
+    type: paragraphs
+    region: content
   langcode:
     type: language_select
-    weight: 2
+    weight: 4
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 24
+    weight: 21
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -225,21 +427,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 22
+    weight: 19
     third_party_settings: {  }
     region: content
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 121
+    weight: 22
     third_party_settings: {  }
     region: content
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 23
+    weight: 20
     third_party_settings: {  }
     region: content
   title:
@@ -252,7 +454,7 @@ content:
     region: content
   uid:
     type: entity_reference_autocomplete
-    weight: 20
+    weight: 17
     settings:
       match_operator: CONTAINS
       size: 60

@@ -1,15 +1,15 @@
 uuid: df7c8f0b-d1d0-4db0-a14f-189e28752f8c
-langcode: en
-status: true
+langcode: de
+status: false
 dependencies:
   module:
     - user
 _core:
   default_config_hash: B2M6BoNVm-hHVnH2ILCpbhCZV71T6zLNs8Ag5QH-oNE
 id: who_s_new
-label: 'Who''s new'
+label: 'Neue Benutzer'
 module: user
-description: 'Shows a list of the newest user accounts on the site.'
+description: 'Zeigt eine Liste der neuesten Benutzerkonten der Website.'
 tag: default
 base_table: users_field_data
 base_field: uid
@@ -163,7 +163,7 @@ display:
           plugin_id: date
           entity_type: user
           entity_field: created
-      title: 'Who''s new'
+      title: 'Neue Benutzer'
       header: {  }
       footer: {  }
       empty: {  }
@@ -180,12 +180,12 @@ display:
   block_1:
     display_plugin: block
     id: block_1
-    display_title: 'Who''s new'
+    display_title: 'Neue Benutzer'
     position: 1
     display_options:
       display_description: 'A list of new users'
-      block_description: 'Who''s new'
-      block_category: User
+      block_description: 'Neue Benutzer'
+      block_category: Benutzer
       display_extenders: {  }
     cache_metadata:
       contexts:

@@ -1,5 +1,5 @@
 uuid: d877a2d5-bd90-40a3-8c44-29e01424b548
-langcode: en
+langcode: de
 status: true
 dependencies:
   config:
@@ -17,6 +17,8 @@ settings:
         -
           name: Formatting
           items:
+            - Styles
+            - Format
             - Bold
             - Italic
         -
@@ -33,23 +35,20 @@ settings:
           name: Media
           items:
             - Blockquote
-            - DrupalImage
-        -
-          name: 'Block Formatting'
-          items:
-            - Format
         -
           name: Tools
           items:
             - Source
   plugins:
     stylescombo:
-      styles: ''
+      styles: "p.large|p.large\r\np.highlighted|p.highlighted\r\na.link--bordered|a.link--bordered\r\na.link--hover-style-2|a.link--hover-style-2\r\na.link--hover-style-3|a.link--hover-style-3\r\nimg.img--bordered|img.img--bordered\r\np.bottom-spacing-large|p.bottom-spacing-large\r\np.top-spacing-large|p.top-spacing-large"
+    language:
+      language_list: un
 image_upload:
   status: true
   scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: 0
-    height: 0
+    width: null
+    height: null

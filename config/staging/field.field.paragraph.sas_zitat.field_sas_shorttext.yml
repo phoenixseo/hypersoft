@@ -1,0 +1,19 @@
+uuid: 8d87a0ca-86e6-45bd-88be-87a02a8daca1
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sas_shorttext
+    - paragraphs.paragraphs_type.sas_zitat
+id: paragraph.sas_zitat.field_sas_shorttext
+field_name: field_sas_shorttext
+entity_type: paragraph
+bundle: sas_zitat
+label: Zitat-Quelle
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

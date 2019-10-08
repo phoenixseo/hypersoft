@@ -1,0 +1,11 @@
+uuid: f03773e9-9f98-46d1-82c9-dafc301e2c8a
+langcode: de
+status: true
+dependencies:
+  content:
+    - 'file:file:c6d619b8-1e8d-465e-aec5-23e8b9c3f0fc'
+id: sas_video
+label: 'SAS: Video'
+icon_uuid: c6d619b8-1e8d-465e-aec5-23e8b9c3f0fc
+description: 'SAS: Video'
+behavior_plugins: {  }

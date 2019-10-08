@@ -11,20 +11,20 @@ dependencies:
     - corporateplus
 id: views_block__mt_testimonials_carousel_block_1_2
 theme: corporateplus
-region: highlighted_top
+region: highlighted
 weight: 0
 provider: null
 plugin: 'views_block:mt_testimonials_carousel-block_1'
 settings:
   id: 'views_block:mt_testimonials_carousel-block_1'
-  label: 'Happy Clients'
+  label: ''
   provider: views
   label_display: visible
-  views_label: 'Happy Clients'
+  views_label: ''
   items_per_page: none
 visibility:
   request_path:
     id: request_path
-    pages: "<front>\r\n/node/16\r\n/node/17\r\n/node/40\r\n/node/53\r\n/node/54\r\n/node/55\r\n/node/59\r\n/node/63\r\n/blocks\r\n/alternative-footer\r\n/mega-menu\r\n/about-us"
+    pages: '<front>'
     negate: false
     context_mapping: {  }

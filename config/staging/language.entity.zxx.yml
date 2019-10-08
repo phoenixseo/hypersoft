@@ -1,11 +1,11 @@
 uuid: 97795b50-8906-4433-b286-ffe19eae7c8a
-langcode: en
+langcode: de
 status: true
 dependencies: {  }
 _core:
   default_config_hash: 35CefWbnzaiytcg3acexxz_GTvuwIjYd_ZTcmmR-tXA
 id: zxx
-label: 'Not applicable'
+label: 'Nicht zutreffend'
 direction: ltr
 weight: 3
 locked: true

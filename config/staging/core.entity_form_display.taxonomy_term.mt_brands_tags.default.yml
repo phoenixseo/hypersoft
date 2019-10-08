@@ -3,11 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.browse_files_modal
     - field.field.taxonomy_term.mt_brands_tags.field_mt_brand_image
-    - image.style.thumbnail
     - taxonomy.vocabulary.mt_brands_tags
   module:
-    - image
+    - entity_browser
     - path
     - text
 id: taxonomy_term.mt_brands_tags.default
@@ -16,20 +16,26 @@ bundle: mt_brands_tags
 mode: default
 content:
   description:
-    type: text_textfield
+    type: text_textarea
     weight: 0
     settings:
-      size: 60
       placeholder: ''
+      rows: 5
     third_party_settings: {  }
     region: content
   field_mt_brand_image:
     weight: 31
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      entity_browser: browse_files_modal
+      field_widget_remove: true
+      selection_mode: selection_edit
+      preview_image_style: file_entity_browser_thumbnail
+      field_widget_edit: true
+      field_widget_replace: false
+      open: false
+      view_mode: default
     third_party_settings: {  }
-    type: image_image
+    type: entity_browser_file
     region: content
   langcode:
     type: language_select

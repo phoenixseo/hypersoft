@@ -1,5 +1,5 @@
 uuid: e3d9a969-1e63-4df4-a254-03460204eee4
-langcode: en
+langcode: de
 status: true
 dependencies:
   config:
@@ -7,6 +7,7 @@ dependencies:
     - image.style.thumbnail
   module:
     - image
+    - lazy
     - user
 _core:
   default_config_hash: L2mtwGWH_7wDRCMIR4r_Iu_jmvQ10DV1L8ht8iNZ5qY
@@ -26,7 +27,9 @@ content:
     settings:
       image_style: thumbnail
       image_link: content
-    third_party_settings: {  }
+    third_party_settings:
+      lazy:
+        lazy_image: '1'
     label: hidden
     region: content
 hidden:

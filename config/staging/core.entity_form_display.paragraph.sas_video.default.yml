@@ -1,0 +1,23 @@
+uuid: e8731c81-0775-4a8e-9916-42c3f1233d0e
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sas_video.field_sas_video
+    - paragraphs.paragraphs_type.sas_video
+  module:
+    - video_embed_field
+id: paragraph.sas_video.default
+targetEntityType: paragraph
+bundle: sas_video
+mode: default
+content:
+  field_sas_video:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: video_embed_field_textfield
+    region: content
+hidden:
+  created: true
+  status: true

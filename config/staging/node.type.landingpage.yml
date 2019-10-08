@@ -1,0 +1,18 @@
+uuid: 989f86bf-21db-4b17-970e-3830a36b7867
+langcode: de
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Landingpage
+type: landingpage
+description: 'Keyword-fokussierte Landeseite. Thematisch eng verknüpfte Keywords können zusammen abgebildet werden. Recherchiere auch die "anderen Schreibweisen" der verwendeten Keywords und benutze Sie in Überschriften und Texten.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

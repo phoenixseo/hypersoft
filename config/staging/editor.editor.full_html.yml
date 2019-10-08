@@ -1,5 +1,5 @@
 uuid: ef256e59-f7c5-4793-9d96-00edd5e592c2
-langcode: en
+langcode: de
 status: true
 dependencies:
   config:
@@ -38,13 +38,13 @@ settings:
           name: Media
           items:
             - Blockquote
-            - DrupalImage
             - Table
             - HorizontalRule
         -
           name: 'Block Formatting'
           items:
             - Format
+            - Styles
         -
           name: Tools
           items:
@@ -52,12 +52,14 @@ settings:
             - Source
   plugins:
     stylescombo:
-      styles: ''
+      styles: "p.large|p.large\r\np.highlighted|p.highlighted\r\na.link--bordered|a.link--bordered\r\na.link--hover-style-2|a.link--hover-style-2\r\na.link--hover-style-3|a.link--hover-style-3\r\nimg.img--bordered|img.img--bordered\r\np.bottom-spacing-large|p.bottom-spacing-large\r\np.top-spacing-large|p.top-spacing-large"
+    language:
+      language_list: un
 image_upload:
   status: true
   scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: 0
-    height: 0
+    width: null
+    height: null

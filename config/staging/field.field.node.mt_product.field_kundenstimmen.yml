@@ -1,0 +1,29 @@
+uuid: ec18b49c-f0aa-4f2d-8adb-ebd139dea566
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_kundenstimmen
+    - node.type.mt_product
+    - node.type.mt_testimonial
+id: node.mt_product.field_kundenstimmen
+field_name: field_kundenstimmen
+entity_type: node
+bundle: mt_product
+label: Kundenstimmen
+description: 'Kundenstimmen (Testimonials) mit diesem Produkt verknüpfen...'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      mt_testimonial: mt_testimonial
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

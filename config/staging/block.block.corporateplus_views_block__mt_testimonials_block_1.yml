@@ -19,12 +19,12 @@ settings:
   id: 'views_block:mt_testimonials-block_1'
   label: ''
   provider: views
-  label_display: '0'
+  label_display: visible
   views_label: ''
   items_per_page: none
 visibility:
   request_path:
     id: request_path
-    pages: /blocks
+    pages: '<front>'
     negate: false
     context_mapping: {  }

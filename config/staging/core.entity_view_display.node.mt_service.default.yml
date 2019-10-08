@@ -20,6 +20,7 @@ dependencies:
   module:
     - entity_reference_revisions
     - image
+    - lazy
     - link
     - text
     - user
@@ -42,7 +43,9 @@ content:
     settings:
       image_style: large
       image_link: file
-    third_party_settings: {  }
+    third_party_settings:
+      lazy:
+        lazy_image: '1'
     type: image
     region: content
   field_mt_buy_link:
@@ -95,8 +98,12 @@ content:
     settings:
       image_style: large
       link_image_to: provider
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: false
     third_party_settings: {  }
-    type: video_embed_field_thumbnail
+    type: video_embed_field_lazyload
     region: content
   links:
     weight: 8

@@ -6,13 +6,12 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main
-    parent: 'main:'
+    available_menus: {  }
+    parent: ''
 name: Product
 type: mt_product
-description: 'A Product post is ideal for creating and showcasing your products. It comes with the option to be featured at the front page slide show. It also provides the ability to attach one main product image, which is automatically adjusted to fit into the website layout. Further to that, what’s a particularly great time-saver about a Product post, is that it provides the ability to attach a series of images, thumbnails of which are automatically created and adjusted to fit into the website layout, wherever needed.'
+description: 'Ein Produkt. Technik-lastiger Inhalt mit sachlicher Beschreibung der Features, Eckdaten, Verlinkung zu Videos, in Langform.'
 help: ''
-new_revision: false
+new_revision: true
 preview_mode: 1
 display_submitted: false

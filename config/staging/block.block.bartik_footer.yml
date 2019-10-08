@@ -1,5 +1,5 @@
 uuid: ed854dee-c787-4a34-a130-8943e78de0b3
-langcode: en
+langcode: de
 status: true
 dependencies:
   config:
@@ -18,7 +18,7 @@ provider: null
 plugin: 'system_menu_block:footer'
 settings:
   id: 'system_menu_block:footer'
-  label: 'Footer menu'
+  label: About
   provider: system
   label_display: '0'
   level: 1

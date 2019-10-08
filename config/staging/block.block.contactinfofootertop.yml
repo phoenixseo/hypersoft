@@ -6,7 +6,6 @@ dependencies:
     - 'block_content:basic:4c4c2a42-eadb-45b6-bd73-b66c8ae3bcf3'
   module:
     - block_content
-    - system
   theme:
     - corporateplus
 id: contactinfofootertop
@@ -17,15 +16,10 @@ provider: null
 plugin: 'block_content:4c4c2a42-eadb-45b6-bd73-b66c8ae3bcf3'
 settings:
   id: 'block_content:4c4c2a42-eadb-45b6-bd73-b66c8ae3bcf3'
-  label: 'Contact Info'
+  label: 'Wir beraten Sie gern!'
   provider: block_content
-  label_display: '0'
+  label_display: visible
   status: true
   info: ''
   view_mode: full
-visibility:
-  request_path:
-    id: request_path
-    pages: /blocks
-    negate: false
-    context_mapping: {  }
+visibility: {  }

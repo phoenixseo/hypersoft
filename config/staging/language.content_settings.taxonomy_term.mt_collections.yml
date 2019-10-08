@@ -1,0 +1,11 @@
+uuid: 1a2a988a-6bdd-4645-8225-94bbe0c0c393
+langcode: de
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.mt_collections
+id: taxonomy_term.mt_collections
+target_entity_type_id: taxonomy_term
+target_bundle: mt_collections
+default_langcode: site_default
+language_alterable: false

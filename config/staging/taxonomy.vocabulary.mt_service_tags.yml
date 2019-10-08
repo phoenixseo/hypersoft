@@ -1,8 +1,8 @@
 uuid: a8a22330-d52a-4272-ab33-388270e8f814
-langcode: en
+langcode: de
 status: true
 dependencies: {  }
-name: 'Service Tags'
+name: ServiceTags
 vid: mt_service_tags
-description: ''
-weight: 0
+description: 'Service(s) Kategorisierung'
+weight: -2

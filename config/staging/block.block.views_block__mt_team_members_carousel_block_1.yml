@@ -12,7 +12,7 @@ dependencies:
 id: views_block__mt_team_members_carousel_block_1
 theme: corporateplus
 region: content_top_highlighted
-weight: 0
+weight: -36
 provider: null
 plugin: 'views_block:mt_team_members_carousel-block_1'
 settings:
@@ -25,6 +25,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /node/52
+    pages: /intl/team
     negate: false
     context_mapping: {  }

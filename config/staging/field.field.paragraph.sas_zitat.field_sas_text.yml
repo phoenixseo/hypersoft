@@ -1,0 +1,21 @@
+uuid: 5a2c299f-5dd4-492e-8172-02e2ace7a808
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sas_text
+    - paragraphs.paragraphs_type.sas_zitat
+  module:
+    - text
+id: paragraph.sas_zitat.field_sas_text
+field_name: field_sas_text
+entity_type: paragraph
+bundle: sas_zitat
+label: Zitat-Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

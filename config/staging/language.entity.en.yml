@@ -1,11 +1,11 @@
 uuid: 9083175b-274e-426e-bf8e-bfbc748c9e1b
-langcode: en
+langcode: de
 status: true
 dependencies: {  }
 _core:
   default_config_hash: lBXDpdDPXQtrfTJQhr6MjRJJEEyYSoRJ0acdvHLsWeA
 id: en
-label: English
+label: Englisch
 direction: ltr
-weight: 0
+weight: -9
 locked: false

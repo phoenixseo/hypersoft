@@ -1,5 +1,5 @@
 uuid: 48aa471a-7c64-4c91-a7f6-b2d22fe23ed4
-langcode: en
+langcode: de
 status: true
 dependencies:
   theme:
@@ -14,7 +14,7 @@ provider: null
 plugin: local_tasks_block
 settings:
   id: local_tasks_block
-  label: Tabs
+  label: Reiter
   provider: core
   label_display: '0'
   primary: true

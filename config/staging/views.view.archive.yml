@@ -1,5 +1,5 @@
 uuid: a5e53f22-b2dc-47b0-aa2a-dc01d0e4eae7
-langcode: en
+langcode: de
 status: false
 dependencies:
   config:
@@ -10,9 +10,9 @@ dependencies:
 _core:
   default_config_hash: Ea3cxQo9FjYVScZDVackg-6ID_GgTkdKORm_APgV-5I
 id: archive
-label: Archive
+label: Archiv
 module: node
-description: 'All content, by month.'
+description: 'Gesamter Inhalt, nach Monaten'
 tag: default
 base_table: node_field_data
 base_field: nid
@@ -32,7 +32,7 @@ display:
           distinct: false
           replica: false
           query_tags: {  }
-      title: 'Monthly archive'
+      title: 'Monatliches Archiv'
       access:
         type: perm
         options:
@@ -223,7 +223,7 @@ display:
       tags: {  }
   page_1:
     id: page_1
-    display_title: Page
+    display_title: Seite
     display_plugin: page
     position: 2
     display_options:

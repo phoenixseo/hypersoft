@@ -1,0 +1,21 @@
+uuid: 159d43ca-ce22-4ecd-83df-8d2d81eef77f
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sas_text
+    - paragraphs.paragraphs_type.sas_media_object
+  module:
+    - text
+id: paragraph.sas_media_object.field_sas_text
+field_name: field_sas_text
+entity_type: paragraph
+bundle: sas_media_object
+label: 'Media Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

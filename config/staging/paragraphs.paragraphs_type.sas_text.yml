@@ -1,0 +1,11 @@
+uuid: 7753bb41-72b0-4e1e-98da-68795feafdca
+langcode: de
+status: true
+dependencies:
+  content:
+    - 'file:file:7508f983-7a4b-4f5d-b30a-59eb341b781e'
+id: sas_text
+label: 'SAS: Text'
+icon_uuid: 7508f983-7a4b-4f5d-b30a-59eb341b781e
+description: 'SAS: Text'
+behavior_plugins: {  }

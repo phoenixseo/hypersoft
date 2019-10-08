@@ -10,7 +10,7 @@ id: node.mt_product.field_mt_collections
 field_name: field_mt_collections
 entity_type: node
 bundle: mt_product
-label: 'Product Groups'
+label: ProduktGruppe
 description: ''
 required: false
 translatable: false
