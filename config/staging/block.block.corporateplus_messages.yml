@@ -1,0 +1,22 @@
+uuid: 45183447-ad22-4010-8f30-2831db021d57
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - corporateplus
+_core:
+  default_config_hash: kehVULYG75AUjxnydr5aHXVy4_MP7yWkJyHgP0Iycp4
+id: corporateplus_messages
+theme: corporateplus
+region: system_messages
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

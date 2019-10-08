@@ -1,0 +1,84 @@
+uuid: 3c83f4f8-4f03-41d4-b090-506c51f23482
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.page.body
+    - field.field.node.page.field_connections
+    - field.field.node.page.field_image
+    - field.field.node.page.field_mehr_wissen
+    - field.field.node.page.field_mt_banner_image
+    - field.field.node.page.field_mt_slideshow
+    - field.field.node.page.field_mt_slideshow_image
+    - field.field.node.page.field_mt_slideshow_text
+    - field.field.node.page.field_mt_subheader_body
+    - field.field.node.page.field_seitenabschnitte
+    - image.style.large
+    - node.type.page
+  module:
+    - entity_reference_revisions
+    - image
+    - lazy
+    - text
+    - user
+_core:
+  default_config_hash: oZ-7vpIJxjxL2up9B5KrJGD0lazQ9aN0P-fIPo6OrSU
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings:
+      lazy:
+        lazy_image: '1'
+    type: image
+    region: content
+  field_mehr_wissen:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_mt_subheader_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_seitenabschnitte:
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  links:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_connections: true
+  field_mt_banner_image: true
+  field_mt_slideshow: true
+  field_mt_slideshow_image: true
+  field_mt_slideshow_text: true
+  langcode: true

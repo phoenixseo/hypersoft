@@ -1,0 +1,30 @@
+uuid: e485b34e-7f0d-4a04-960b-d020b7c04baf
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_photo_gallery
+  module:
+    - system
+    - views
+  theme:
+    - corporateplus
+id: views_block__mt_photo_gallery_block_1_2
+theme: corporateplus
+region: footer_third
+weight: 0
+provider: null
+plugin: 'views_block:mt_photo_gallery-block_1'
+settings:
+  id: 'views_block:mt_photo_gallery-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/60
+    negate: true
+    context_mapping: {  }

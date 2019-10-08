@@ -1,0 +1,30 @@
+uuid: 78e99aec-13bf-44d0-8b68-21c94918ec0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_showcases
+  module:
+    - system
+    - views
+  theme:
+    - corporateplus
+id: views_block__mt_showcases_block_2
+theme: corporateplus
+region: highlighted
+weight: 0
+provider: null
+plugin: 'views_block:mt_showcases-block_2'
+settings:
+  id: 'views_block:mt_showcases-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

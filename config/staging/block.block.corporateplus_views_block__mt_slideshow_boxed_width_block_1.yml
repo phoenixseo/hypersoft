@@ -1,0 +1,30 @@
+uuid: f37ee754-3b70-4392-9899-1ec9e61531f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_slideshow_boxed_width
+  module:
+    - system
+    - views
+  theme:
+    - corporateplus
+id: corporateplus_views_block__mt_slideshow_boxed_width_block_1
+theme: corporateplus
+region: banner
+weight: -61
+provider: null
+plugin: 'views_block:mt_slideshow_boxed_width-block_1'
+settings:
+  id: 'views_block:mt_slideshow_boxed_width-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/16
+    negate: false
+    context_mapping: {  }

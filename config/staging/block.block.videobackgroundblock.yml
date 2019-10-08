@@ -1,0 +1,31 @@
+uuid: 4295e030-0c05-4306-ac57-f12f0f9a7aee
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mt_background_video_block:1095b191-b590-4db3-8021-af3b7bc02bb9'
+  module:
+    - block_content
+    - system
+  theme:
+    - corporateplus
+id: videobackgroundblock
+theme: corporateplus
+region: featured
+weight: -67
+provider: null
+plugin: 'block_content:1095b191-b590-4db3-8021-af3b7bc02bb9'
+settings:
+  id: 'block_content:1095b191-b590-4db3-8021-af3b7bc02bb9'
+  label: 'Video background block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/node/16\r\n/node/17\r\n/node/40\r\n/node/53\r\n/node/54\r\n/node/55\r\n/node/59\r\n/node/63\r\n/blocks\r\n/alternative-footer\r\n/mega-menu\r\n/about-us"
+    negate: false
+    context_mapping: {  }

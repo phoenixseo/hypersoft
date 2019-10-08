@@ -1,0 +1,11 @@
+uuid: ec8ff94b-f364-468a-9a7b-895d1d9d2907
+langcode: de
+status: true
+dependencies:
+  content:
+    - 'file:file:b89ee488-fa75-4e66-ab66-d519524056ce'
+id: sas_bild
+label: 'SAS: Bild'
+icon_uuid: b89ee488-fa75-4e66-ab66-d519524056ce
+description: 'SAS: Bild'
+behavior_plugins: {  }

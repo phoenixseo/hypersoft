@@ -1,0 +1,22 @@
+uuid: 202808fe-4bcd-4423-89bf-284b959a3e04
+langcode: de
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - corporateplus
+_core:
+  default_config_hash: CS7AHn0_l7fMxXDBRc_QbolQWKlQg4KpXjhnZsa4H8Q
+id: corporateplus_breadcrumbs
+theme: corporateplus
+region: highlighted
+weight: -62
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Pfadnavigation
+  provider: system
+  label_display: '0'
+visibility: {  }

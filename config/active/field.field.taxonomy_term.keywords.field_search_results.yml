@@ -1,0 +1,23 @@
+uuid: 912251a6-e5c8-48f5-bc31-13e964aecbbf
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_search_results
+    - taxonomy.vocabulary.keywords
+id: taxonomy_term.keywords.field_search_results
+field_name: field_search_results
+entity_type: taxonomy_term
+bundle: keywords
+label: 'Search Results'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,30 @@
+uuid: 117d706a-ac02-4d7f-b080-9b27f634f46e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_team_members_carousel
+  module:
+    - system
+    - views
+  theme:
+    - corporateplus
+id: views_block__mt_team_members_carousel_block_1
+theme: corporateplus
+region: content_top_highlighted
+weight: -36
+provider: null
+plugin: 'views_block:mt_team_members_carousel-block_1'
+settings:
+  id: 'views_block:mt_team_members_carousel-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /intl/team
+    negate: false
+    context_mapping: {  }

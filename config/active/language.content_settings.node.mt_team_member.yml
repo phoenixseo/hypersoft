@@ -1,0 +1,11 @@
+uuid: f8ad14da-1266-4de6-a412-a5b9a4858bac
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.mt_team_member
+id: node.mt_team_member
+target_entity_type_id: node
+target_bundle: mt_team_member
+default_langcode: site_default
+language_alterable: false

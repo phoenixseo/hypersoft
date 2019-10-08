@@ -1,0 +1,32 @@
+uuid: ccc14031-25d9-4611-87b5-a7a5c3c9ccea
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - corporateplus
+_core:
+  default_config_hash: kkISXE1LT2FJEoYnqCrCpeFB-2pmGmMxMklVk7rQcfg
+id: corporateplus_footer
+theme: corporateplus
+region: sub_footer_first
+weight: -60
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: About
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/60
+    negate: true
+    context_mapping: {  }

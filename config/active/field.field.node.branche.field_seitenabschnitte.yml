@@ -1,0 +1,87 @@
+uuid: 3c9afc61-e04b-46fa-8866-a1c4f56176a1
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_seitenabschnitte
+    - node.type.branche
+    - paragraphs.paragraphs_type.sas_bild
+    - paragraphs.paragraphs_type.sas_media_object
+    - paragraphs.paragraphs_type.sas_text
+    - paragraphs.paragraphs_type.sas_video
+    - paragraphs.paragraphs_type.sas_zitat
+  module:
+    - entity_reference_revisions
+id: node.branche.field_seitenabschnitte
+field_name: field_seitenabschnitte
+entity_type: node
+bundle: branche
+label: Seitenabschnitte
+description: Seitenabschnitte
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      sas_bild: sas_bild
+      sas_media_object: sas_media_object
+      sas_text: sas_text
+      sas_video: sas_video
+      sas_zitat: sas_zitat
+    target_bundles_drag_drop:
+      mt_collapse:
+        weight: 18
+        enabled: false
+      mt_dropdown:
+        weight: 19
+        enabled: false
+      mt_fancy_linked_image:
+        weight: 20
+        enabled: false
+      mt_fancy_tab:
+        weight: 21
+        enabled: false
+      mt_featured_linked_text_tile:
+        weight: 22
+        enabled: false
+      mt_highlight:
+        weight: 23
+        enabled: false
+      mt_icon_features:
+        weight: 24
+        enabled: false
+      mt_main_slideshow_slide:
+        weight: 25
+        enabled: false
+      mt_map_location:
+        weight: 26
+        enabled: false
+      mt_media_tab:
+        weight: 27
+        enabled: false
+      mt_tab:
+        weight: 28
+        enabled: false
+      mt_video_gallery_slide:
+        weight: 29
+        enabled: false
+      sas_bild:
+        enabled: true
+        weight: 30
+      sas_media_object:
+        enabled: true
+        weight: 31
+      sas_text:
+        enabled: true
+        weight: 32
+      sas_video:
+        enabled: true
+        weight: 33
+      sas_zitat:
+        enabled: true
+        weight: 34
+field_type: entity_reference_revisions

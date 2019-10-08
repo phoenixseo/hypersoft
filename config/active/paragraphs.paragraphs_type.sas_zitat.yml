@@ -1,0 +1,11 @@
+uuid: cc0c386d-33b3-4818-b1c6-a0947b3811bc
+langcode: de
+status: true
+dependencies:
+  content:
+    - 'file:file:a36f00d1-4cc8-43e0-817c-011914c36039'
+id: sas_zitat
+label: 'SAS: Zitat'
+icon_uuid: a36f00d1-4cc8-43e0-817c-011914c36039
+description: 'SAS: Zitat'
+behavior_plugins: {  }

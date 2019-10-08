@@ -1,0 +1,25 @@
+uuid: 59143e6c-38f6-4cb6-bb94-a8f5e32dfda9
+langcode: de
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - corporateplus
+_core:
+  default_config_hash: _7BP-gn_b-eexpqILMaZ1aWmlyOwlSLuELgyN2TCgbU
+id: corporateplus_branding
+theme: corporateplus
+region: header_first
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Branding der Website'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

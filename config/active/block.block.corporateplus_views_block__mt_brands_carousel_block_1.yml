@@ -1,0 +1,24 @@
+uuid: 1fcae3ae-77d1-40cc-916d-7bd9503535d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_brands_carousel
+  module:
+    - views
+  theme:
+    - corporateplus
+id: corporateplus_views_block__mt_brands_carousel_block_1
+theme: corporateplus
+region: hidden_blocks_collection
+weight: -46
+provider: null
+plugin: 'views_block:mt_brands_carousel-block_1'
+settings:
+  id: 'views_block:mt_brands_carousel-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

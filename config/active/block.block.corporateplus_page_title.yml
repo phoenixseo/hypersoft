@@ -1,0 +1,20 @@
+uuid: d7797afd-ed62-4c28-85a2-b0ccefe64bb6
+langcode: de
+status: true
+dependencies:
+  theme:
+    - corporateplus
+_core:
+  default_config_hash: 7lrMsjXNlbbGszawnodRXmSt7Jhz4-SHgca7aP5yqzc
+id: corporateplus_page_title
+theme: corporateplus
+region: content
+weight: -53
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: Seitentitel
+  provider: core
+  label_display: '0'
+visibility: {  }

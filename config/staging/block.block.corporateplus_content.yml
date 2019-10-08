@@ -1,0 +1,22 @@
+uuid: 21443ce2-56f3-4b1d-865e-55814f416d55
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - corporateplus
+_core:
+  default_config_hash: aZ1uXnMH1h0xGmqzQKvOWEzSAgBWZLgVpq3kevtjHik
+id: corporateplus_content
+theme: corporateplus
+region: content
+weight: -49
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

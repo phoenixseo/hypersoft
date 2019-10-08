@@ -1,0 +1,20 @@
+uuid: c9026d91-6aed-4a66-bedb-eb80cecab0e7
+langcode: de
+status: true
+dependencies:
+  theme:
+    - corporateplus
+_core:
+  default_config_hash: LEJsZgZNh__zKWo3MGM81zh8BdjRutrEe5dMBfbTsD8
+id: corporateplus_local_actions
+theme: corporateplus
+region: content
+weight: -52
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primäre Verwaltungsaktionen'
+  provider: core
+  label_display: '0'
+visibility: {  }

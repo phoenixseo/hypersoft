@@ -1,0 +1,31 @@
+uuid: f263de0e-39fd-45e4-bacf-118c8b965b18
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mt_background_image_block:5907671d-1ce2-48b3-b2fa-045b54572c1e'
+  module:
+    - block_content
+    - system
+  theme:
+    - corporateplus
+id: corporateplus_backgroundimageblock
+theme: corporateplus
+region: banner
+weight: -61
+provider: null
+plugin: 'block_content:5907671d-1ce2-48b3-b2fa-045b54572c1e'
+settings:
+  id: 'block_content:5907671d-1ce2-48b3-b2fa-045b54572c1e'
+  label: 'Background Image Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/17
+    negate: false
+    context_mapping: {  }

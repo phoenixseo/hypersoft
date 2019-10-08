@@ -1,0 +1,33 @@
+uuid: db70a88f-f780-4d0d-823f-0709df176588
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_related_nodes_carousel
+  module:
+    - node
+    - views
+  theme:
+    - corporateplus
+id: corporateplus_views_block__mt_related_nodes_carousel_block_1
+theme: corporateplus
+region: featured_top
+weight: -68
+provider: null
+plugin: 'views_block:mt_related_nodes_carousel-block_1'
+settings:
+  id: 'views_block:mt_related_nodes_carousel-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      mt_product: mt_product
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

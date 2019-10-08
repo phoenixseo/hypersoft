@@ -1,0 +1,23 @@
+uuid: 4470d6f8-6c2a-4cfb-8866-cec43b7e48f8
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_hypersoft_skala
+    - taxonomy.vocabulary.keywords
+id: taxonomy_term.keywords.field_hypersoft_skala
+field_name: field_hypersoft_skala
+entity_type: taxonomy_term
+bundle: keywords
+label: 'Hypersoft Skala'
+description: 'Wie wichtig ist dieses Keyword für Hypersoft? - Auf einer Skala von [0..100]'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: 100
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,29 @@
+uuid: 798733db-4859-4329-8018-686c2bc5980d
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file_downloads
+    - media.type.file
+    - node.type.mt_product
+id: node.mt_product.field_file_downloads
+field_name: field_file_downloads
+entity_type: node
+bundle: mt_product
+label: 'File Downloads'
+description: Datei-Anhänge
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      file: file
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,11 @@
+uuid: 5a905893-96fa-4b78-9336-2bb496bca1f6
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.mt_benefit
+id: node.mt_benefit
+target_entity_type_id: node
+target_bundle: mt_benefit
+default_langcode: site_default
+language_alterable: false

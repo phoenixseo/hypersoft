@@ -1,0 +1,46 @@
+uuid: 57bf9756-d768-42a0-937a-d9a199085e3a
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sas_media_object.field_sas_image_ref
+    - field.field.paragraph.sas_media_object.field_sas_shorttext
+    - field.field.paragraph.sas_media_object.field_sas_text
+    - image.style.mt_brands
+    - paragraphs.paragraphs_type.sas_media_object
+  module:
+    - image
+    - lazy
+    - text
+id: paragraph.sas_media_object.default
+targetEntityType: paragraph
+bundle: sas_media_object
+mode: default
+content:
+  field_sas_image_ref:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: mt_brands
+      image_link: ''
+    third_party_settings:
+      lazy:
+        lazy_image: '1'
+    type: image
+    region: content
+  field_sas_shorttext:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_sas_text:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

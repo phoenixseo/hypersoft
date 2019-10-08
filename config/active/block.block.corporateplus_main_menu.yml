@@ -1,0 +1,32 @@
+uuid: 0d4b7e3f-d566-4534-98c0-8c7cf4ac928e
+langcode: de
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - corporateplus
+_core:
+  default_config_hash: lbwiwHQ9t4ImLyDcz7b9jWglsIPn2cQ-xTFfugIPfxY
+id: corporateplus_main_menu
+theme: corporateplus
+region: sidebar_second
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: Hauptnavigation
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/connect"
+    negate: true
+    context_mapping: {  }

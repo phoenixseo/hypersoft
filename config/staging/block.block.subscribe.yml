@@ -1,0 +1,25 @@
+uuid: 7829d264-3c84-4288-a9fb-4af50cc3a4f2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0839439a-2bae-48e4-872e-6ff169998482'
+  module:
+    - block_content
+  theme:
+    - corporateplus
+id: subscribe
+theme: corporateplus
+region: footer_top_first
+weight: 0
+provider: null
+plugin: 'block_content:0839439a-2bae-48e4-872e-6ff169998482'
+settings:
+  id: 'block_content:0839439a-2bae-48e4-872e-6ff169998482'
+  label: Subscribe
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

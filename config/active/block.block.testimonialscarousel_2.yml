@@ -1,0 +1,25 @@
+uuid: de77accd-bb72-43fb-85e1-c772dedc216b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mt_background_image_block:76ebbc61-2adf-4137-a427-ed7f09fb2975'
+  module:
+    - block_content
+  theme:
+    - corporateplus
+id: testimonialscarousel_2
+theme: corporateplus
+region: sub_featured
+weight: -58
+provider: null
+plugin: 'block_content:76ebbc61-2adf-4137-a427-ed7f09fb2975'
+settings:
+  id: 'block_content:76ebbc61-2adf-4137-a427-ed7f09fb2975'
+  label: 'Testimonials Carousel'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

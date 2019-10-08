@@ -1,0 +1,25 @@
+uuid: 9433724a-3eee-4249-b5fc-43b197051a08
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.mt-subfooter-menu
+  module:
+    - system
+  theme:
+    - corporateplus
+id: corporateplus_subfooter
+theme: corporateplus
+region: slideout
+weight: -49
+provider: null
+plugin: 'system_menu_block:mt-subfooter-menu'
+settings:
+  id: 'system_menu_block:mt-subfooter-menu'
+  label: Subfooter
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

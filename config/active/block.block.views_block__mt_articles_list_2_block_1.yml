@@ -1,0 +1,24 @@
+uuid: a96a1812-c271-4996-a70d-556c73e166d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_articles_list_2
+  module:
+    - views
+  theme:
+    - corporateplus
+id: views_block__mt_articles_list_2_block_1
+theme: corporateplus
+region: footer_second
+weight: 0
+provider: null
+plugin: 'views_block:mt_articles_list_2-block_1'
+settings:
+  id: 'views_block:mt_articles_list_2-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

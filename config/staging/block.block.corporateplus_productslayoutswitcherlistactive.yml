@@ -1,0 +1,31 @@
+uuid: 09cb7fc9-848e-4723-b475-6242306c876f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9acb6453-8126-426b-88ec-d750288e958c'
+  module:
+    - block_content
+    - system
+  theme:
+    - corporateplus
+id: corporateplus_productslayoutswitcherlistactive
+theme: corporateplus
+region: content
+weight: -55
+provider: null
+plugin: 'block_content:9acb6453-8126-426b-88ec-d750288e958c'
+settings:
+  id: 'block_content:9acb6453-8126-426b-88ec-d750288e958c'
+  label: 'Products Layout Switcher (List Active)'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /products-list
+    negate: false
+    context_mapping: {  }

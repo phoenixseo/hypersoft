@@ -1,0 +1,25 @@
+uuid: 6418372a-c2b8-41e5-8de6-6ae12ccb5f4a
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.mt-footer-menu-two
+  module:
+    - system
+  theme:
+    - corporateplus
+id: corporateplus_questions
+theme: corporateplus
+region: slideout
+weight: -52
+provider: null
+plugin: 'system_menu_block:mt-footer-menu-two'
+settings:
+  id: 'system_menu_block:mt-footer-menu-two'
+  label: 'Questions?'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

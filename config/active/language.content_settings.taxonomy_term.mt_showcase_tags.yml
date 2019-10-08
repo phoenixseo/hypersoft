@@ -1,0 +1,11 @@
+uuid: ec3e1993-9df9-4091-8dc7-c1d58380ea5f
+langcode: de
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.mt_showcase_tags
+id: taxonomy_term.mt_showcase_tags
+target_entity_type_id: taxonomy_term
+target_bundle: mt_showcase_tags
+default_langcode: site_default
+language_alterable: false

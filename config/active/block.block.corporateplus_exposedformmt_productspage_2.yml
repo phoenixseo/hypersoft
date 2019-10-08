@@ -1,0 +1,23 @@
+uuid: 545399cc-4045-47d1-ac51-e945e8862403
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.mt_products
+  module:
+    - views
+  theme:
+    - corporateplus
+id: corporateplus_exposedformmt_productspage_2
+theme: corporateplus
+region: sidebar_first
+weight: -53
+provider: null
+plugin: 'views_exposed_filter_block:mt_products-page_2'
+settings:
+  id: 'views_exposed_filter_block:mt_products-page_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility: {  }

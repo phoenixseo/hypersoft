@@ -1,0 +1,31 @@
+uuid: 67a2fbe7-927e-4c39-81c8-ee5d88db562a
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sas_zitat.field_sas_shorttext
+    - field.field.paragraph.sas_zitat.field_sas_text
+    - paragraphs.paragraphs_type.sas_zitat
+  module:
+    - text
+id: paragraph.sas_zitat.default
+targetEntityType: paragraph
+bundle: sas_zitat
+mode: default
+content:
+  field_sas_shorttext:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_sas_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

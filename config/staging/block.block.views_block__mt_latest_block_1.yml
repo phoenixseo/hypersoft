@@ -1,0 +1,24 @@
+uuid: 8f6ca795-9af5-40f9-905e-082d2bb4a4be
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_latest
+  module:
+    - views
+  theme:
+    - corporateplus
+id: views_block__mt_latest_block_1
+theme: corporateplus
+region: hidden_blocks_collection
+weight: 0
+provider: null
+plugin: 'views_block:mt_latest-block_1'
+settings:
+  id: 'views_block:mt_latest-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

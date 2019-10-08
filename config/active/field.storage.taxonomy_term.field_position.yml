@@ -1,0 +1,20 @@
+uuid: 3106895a-ae31-4f6c-9899-b7c6aac6f566
+langcode: de
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_position
+field_name: field_position
+entity_type: taxonomy_term
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

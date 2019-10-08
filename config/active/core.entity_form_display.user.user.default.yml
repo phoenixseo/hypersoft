@@ -1,0 +1,53 @@
+uuid: 4c08e0a8-5971-46fc-879f-ad962dc81471
+langcode: de
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.browse_files_modal
+    - field.field.user.user.user_picture
+  module:
+    - entity_browser
+    - user
+_core:
+  default_config_hash: LLAieeozVsoZDb-2PbFxRJpQqnKmpR7-4OoRJnduz-U
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  contact:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  language:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  timezone:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  user_picture:
+    type: entity_browser_file
+    settings:
+      entity_browser: browse_files_modal
+      field_widget_remove: true
+      selection_mode: selection_edit
+      preview_image_style: file_entity_browser_thumbnail
+      field_widget_edit: true
+      field_widget_replace: false
+      open: false
+      view_mode: default
+    third_party_settings: {  }
+    weight: -1
+    region: content
+hidden:
+  langcode: true

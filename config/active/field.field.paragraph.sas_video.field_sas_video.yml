@@ -1,0 +1,25 @@
+uuid: d3984814-cc47-4fd1-b602-a793b4370559
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sas_video
+    - paragraphs.paragraphs_type.sas_video
+  module:
+    - video_embed_field
+id: paragraph.sas_video.field_sas_video
+field_name: field_sas_video
+entity_type: paragraph
+bundle: sas_video
+label: 'sas video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    vimeo: vimeo
+    youtube: youtube
+    youtube_playlist: '0'
+field_type: video_embed_field

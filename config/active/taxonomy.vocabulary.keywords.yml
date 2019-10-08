@@ -1,0 +1,8 @@
+uuid: 4395fd73-7a8d-4c73-992b-1873cdb8ada9
+langcode: de
+status: true
+dependencies: {  }
+name: Keywords
+vid: keywords
+description: 'SEO Keyword Phrases'
+weight: 0

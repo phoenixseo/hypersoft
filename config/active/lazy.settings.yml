@@ -1,0 +1,37 @@
+errorClass: b-error
+loadInvisible: false
+offset: 100
+saveViewportOffsetDelay: 50
+selector: b-lazy
+alter_tag:
+  img: img
+  iframe: iframe
+skipClass: no-b-lazy
+src: data-src
+successClass: b-loaded
+validateDelay: '25'
+placeholderSrc: 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='
+image_fields:
+  paragraph--sas_bild--default--field_sas_image_ref: true
+  paragraph--sas_media_object--default--field_sas_image_ref: true
+  node--article--default--field_image: true
+  node--mt_benefit--default--field_image: true
+  node--page--default--field_image: true
+  node--mt_product--default--field_image: true
+  node--mt_service--default--field_image: true
+  node--mt_showcase--default--field_image: true
+  node--mt_slideshow_entry--default--field_mt_slideshow_image: true
+  node--mt_team_member--default--field_mt_member_photo: true
+  node--mt_testimonial--default--field_mt_testimonial_image: true
+  paragraph--sas_bild--preview--field_sas_image_ref: true
+  node--mt_service--search_index--field_image: true
+  node--page--search_index--field_image: true
+  node--mt_product--search_index--field_image: true
+  paragraph--sas_media_object--preview--field_sas_image_ref: true
+  user--user--default--user_picture: true
+  node--mt_slideshow_entry--search_index--field_mt_slideshow_image: true
+  node--mt_product--rss--field_image: true
+disabled_paths: /rss.xml
+_core:
+  default_config_hash: h_4N5fL4QosXf3JITfYemQOmapK2xYFlwZGOv371LH8
+langcode: de

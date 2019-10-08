@@ -1,0 +1,23 @@
+uuid: 98644d44-f045-4d91-9090-334509eafec9
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_produkt_aktiv
+    - node.type.mt_product
+id: node.mt_product.field_produkt_aktiv
+field_name: field_produkt_aktiv
+entity_type: node
+bundle: mt_product
+label: 'Produkt aktiv'
+description: 'Ist dieses Produkt "aktiv" oder ein Auslaufmodell oder nicht mehr im Sortiment?'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

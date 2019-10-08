@@ -1,0 +1,11 @@
+uuid: 87200b13-c8cb-467a-a0fc-16d1d3463e4e
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.mt_showcase
+id: node.mt_showcase
+target_entity_type_id: node
+target_bundle: mt_showcase
+default_langcode: site_default
+language_alterable: false

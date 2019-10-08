@@ -1,0 +1,11 @@
+uuid: f032226d-288c-47cb-a96c-66967ae0b1f9
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.branche
+id: node.branche
+target_entity_type_id: node
+target_bundle: branche
+default_langcode: site_default
+language_alterable: false

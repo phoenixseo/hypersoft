@@ -1,0 +1,17 @@
+uuid: 01c23e36-7b09-4950-8ece-04b9df3049b8
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Testimonial
+type: mt_testimonial
+description: 'The Testimonial entry is perfect to showcase the words of love from your users and customers.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,42 @@
+uuid: e2d09054-01f7-4724-9ace-be6dd3aab56b
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mehr_wissen
+    - node.type.article
+    - node.type.mt_benefit
+    - node.type.mt_product
+    - node.type.mt_service
+    - node.type.mt_showcase
+    - node.type.mt_team_member
+    - node.type.mt_testimonial
+    - node.type.page
+id: node.page.field_mehr_wissen
+field_name: field_mehr_wissen
+entity_type: node
+bundle: page
+label: 'Mehr Wissen'
+description: 'In dieses Feld können weitere Inhalte vorgegeben werden, die der Leser im Anschluß lesen soll (Benutzerführung). Diese "mehr Wissen" Inhalte werden in geeigneter Form unterhalb oder neben dem aktuellen Text angezeigt werden.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      article: article
+      mt_benefit: mt_benefit
+      page: page
+      mt_product: mt_product
+      mt_service: mt_service
+      mt_showcase: mt_showcase
+      mt_team_member: mt_team_member
+      mt_testimonial: mt_testimonial
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: article
+field_type: entity_reference

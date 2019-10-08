@@ -1,0 +1,17 @@
+uuid: 62682063-1a2f-4c11-931e-896e95f327a6
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Showcase
+type: mt_showcase
+description: 'A Showcase post is ideal for creating and displaying showcases.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,11 @@
+uuid: c6536d1f-de70-4880-b1a4-6f3b56863a77
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.mt_product
+id: node.mt_product
+target_entity_type_id: node
+target_bundle: mt_product
+default_langcode: site_default
+language_alterable: false

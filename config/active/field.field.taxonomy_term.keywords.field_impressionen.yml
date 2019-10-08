@@ -1,0 +1,23 @@
+uuid: a181167b-2545-44d0-8a3f-54f3154bdc08
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_impressionen
+    - taxonomy.vocabulary.keywords
+id: taxonomy_term.keywords.field_impressionen
+field_name: field_impressionen
+entity_type: taxonomy_term
+bundle: keywords
+label: Impressionen
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

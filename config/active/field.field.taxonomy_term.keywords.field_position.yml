@@ -1,0 +1,23 @@
+uuid: 44981da5-7a90-409d-9505-e2fb490a95b1
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_position
+    - taxonomy.vocabulary.keywords
+id: taxonomy_term.keywords.field_position
+field_name: field_position
+entity_type: taxonomy_term
+bundle: keywords
+label: Position
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

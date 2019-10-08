@@ -1,0 +1,30 @@
+uuid: 7c162daf-d2f1-4ba1-87f2-05fdf2201892
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_benefits
+  module:
+    - system
+    - views
+  theme:
+    - corporateplus
+id: views_block__mt_benefits_block_1
+theme: corporateplus
+region: content_top
+weight: 0
+provider: null
+plugin: 'views_block:mt_benefits-block_1'
+settings:
+  id: 'views_block:mt_benefits-block_1'
+  label: 'Why Choose Us'
+  provider: views
+  label_display: visible
+  views_label: 'Why Choose Us'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/node/16\r\n/node/17\r\n/node/40\r\n/node/53\r\n/node/54\r\n/node/55\r\n/node/59\r\n/node/63\r\n/blocks\r\n/alternative-footer\r\n/mega-menu"
+    negate: false
+    context_mapping: {  }

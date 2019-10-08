@@ -1,0 +1,41 @@
+uuid: 9eec9696-269d-4fc2-af0f-2cf80c1652bd
+langcode: de
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.browse_files_modal
+    - field.field.paragraph.sas_bild.field_sas_image_ref
+    - field.field.paragraph.sas_bild.field_sas_shorttext
+    - paragraphs.paragraphs_type.sas_bild
+  module:
+    - entity_browser
+id: paragraph.sas_bild.default
+targetEntityType: paragraph
+bundle: sas_bild
+mode: default
+content:
+  field_sas_image_ref:
+    weight: 0
+    settings:
+      entity_browser: browse_files_modal
+      field_widget_remove: true
+      selection_mode: selection_edit
+      preview_image_style: file_entity_browser_thumbnail
+      field_widget_edit: true
+      field_widget_replace: false
+      open: false
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_browser_file
+    region: content
+  field_sas_shorttext:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

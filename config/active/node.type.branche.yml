@@ -1,0 +1,17 @@
+uuid: 7f6319b6-31fb-4e05-9c98-e30b4a6e823c
+langcode: de
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Branche
+type: branche
+description: 'Branchen: Systemgastronomie, Ketten, Hotels etc.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

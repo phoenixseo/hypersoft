@@ -1,0 +1,29 @@
+uuid: caa54dbc-d39f-444e-8d9b-3298d885159c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_products
+  module:
+    - system
+    - views
+  theme:
+    - corporateplus
+id: corporateplus_exposedformmt_productspage_1
+theme: corporateplus
+region: sidebar_first
+weight: -54
+provider: null
+plugin: 'views_exposed_filter_block:mt_products-page_1'
+settings:
+  id: 'views_exposed_filter_block:mt_products-page_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /products-4-col
+    negate: false
+    context_mapping: {  }

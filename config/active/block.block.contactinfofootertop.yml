@@ -1,0 +1,25 @@
+uuid: dcb5d477-b33f-46c7-849d-20dfbfbded53
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4c4c2a42-eadb-45b6-bd73-b66c8ae3bcf3'
+  module:
+    - block_content
+  theme:
+    - corporateplus
+id: contactinfofootertop
+theme: corporateplus
+region: sub_featured
+weight: -65
+provider: null
+plugin: 'block_content:4c4c2a42-eadb-45b6-bd73-b66c8ae3bcf3'
+settings:
+  id: 'block_content:4c4c2a42-eadb-45b6-bd73-b66c8ae3bcf3'
+  label: 'Wir beraten Sie gern!'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
