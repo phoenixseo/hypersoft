@@ -7,12 +7,12 @@ dependencies:
 third_party_settings:
   menu_ui:
     available_menus:
-      - main
-    parent: 'main:'
+      - themen-menue
+    parent: 'themen-menue:'
 name: Landingpage
 type: landingpage
-description: 'Keyword-fokussierte Landeseite. Thematisch eng verknüpfte Keywords können zusammen abgebildet werden. Recherchiere auch die "anderen Schreibweisen" der verwendeten Keywords und benutze Sie in Überschriften und Texten.'
+description: 'URL Path: Automatisch. Keyword-fokussierte Landeseite. Thematisch eng verknüpfte Keywords können zusammen abgebildet werden. Recherchiere auch die "anderen Schreibweisen" der verwendeten Keywords und benutze Sie in Überschriften und Texten.'
 help: ''
 new_revision: true
 preview_mode: 1
-display_submitted: true
+display_submitted: false

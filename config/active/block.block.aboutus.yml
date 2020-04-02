@@ -16,7 +16,7 @@ provider: null
 plugin: 'block_content:8a15feea-4071-4cde-8e85-e6582291ef60'
 settings:
   id: 'block_content:8a15feea-4071-4cde-8e85-e6582291ef60'
-  label: About
+  label: 'Über Hypersoft'
   provider: block_content
   label_display: visible
   status: true

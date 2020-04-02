@@ -1,0 +1,11 @@
+uuid: 7c48a35f-5883-488e-8ac5-afdb42f3651d
+langcode: de
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.artikelkategorie
+id: taxonomy_term.artikelkategorie
+target_entity_type_id: taxonomy_term
+target_bundle: artikelkategorie
+default_langcode: site_default
+language_alterable: false

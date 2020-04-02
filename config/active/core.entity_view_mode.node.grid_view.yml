@@ -1,0 +1,10 @@
+uuid: 1e9d9316-8826-499c-ac7c-6390aa0e196b
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+id: node.grid_view
+label: 'Grid View'
+targetEntityType: node
+cache: true

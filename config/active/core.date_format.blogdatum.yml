@@ -1,0 +1,8 @@
+uuid: c825e174-46bb-4aff-a067-fb084c8c80fc
+langcode: de
+status: true
+dependencies: {  }
+id: blogdatum
+label: BlogDatum
+locked: false
+pattern: 'l, j. F Y - H:i \U\h\r'

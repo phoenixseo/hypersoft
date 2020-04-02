@@ -1,0 +1,17 @@
+uuid: 39513b33-3050-4284-823a-dfedf2e3ff94
+langcode: de
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Partner
+type: partner
+description: 'URL Path: Automatisch. Hypersoft Partner / Leistungspartner'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

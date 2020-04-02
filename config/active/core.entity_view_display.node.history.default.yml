@@ -1,0 +1,39 @@
+uuid: 4bda01f7-c957-413a-80b8-e84278df62b1
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.history.body
+    - field.field.node.history.field_jahreszahl
+    - node.type.history
+  module:
+    - text
+    - user
+id: node.history.default
+targetEntityType: node
+bundle: history
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_jahreszahl:
+    weight: 0
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: false
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

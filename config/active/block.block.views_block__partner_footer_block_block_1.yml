@@ -1,0 +1,24 @@
+uuid: 9dbee145-9f1d-4e02-8323-b85236b96307
+langcode: de
+status: true
+dependencies:
+  config:
+    - views.view.partner_footer_block
+  module:
+    - views
+  theme:
+    - corporateplus
+id: views_block__partner_footer_block_block_1
+theme: corporateplus
+region: footer_third
+weight: 0
+provider: null
+plugin: 'views_block:partner_footer_block-block_1'
+settings:
+  id: 'views_block:partner_footer_block-block_1'
+  label: 'Hypersoft Partner'
+  provider: views
+  label_display: visible
+  views_label: 'Hypersoft Partner'
+  items_per_page: none
+visibility: {  }

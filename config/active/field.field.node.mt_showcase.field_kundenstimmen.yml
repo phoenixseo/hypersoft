@@ -1,0 +1,21 @@
+uuid: 8e13226f-b19e-4a18-90fb-b5e3fdc78d45
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_kundenstimmen
+    - node.type.mt_showcase
+id: node.mt_showcase.field_kundenstimmen
+field_name: field_kundenstimmen
+entity_type: node
+bundle: mt_showcase
+label: Kundenstimmen
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,10 @@
+uuid: db105d50-ad60-4705-a5a2-733f5bb78e8f
+langcode: de
+status: true
+dependencies:
+  module:
+    - entity_embed
+id: entity_embed_fake_entity.token
+label: Token
+targetEntityType: entity_embed_fake_entity
+cache: true

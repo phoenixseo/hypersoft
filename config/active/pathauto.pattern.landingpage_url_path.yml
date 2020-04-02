@@ -1,0 +1,22 @@
+uuid: 87ea5ccd-f540-48f0-9fbf-14ed49c27dca
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+id: landingpage_url_path
+label: 'LandingPage URL Path'
+type: 'canonical_entities:node'
+pattern: '/kassensystem/[node:title]'
+selection_criteria:
+  db8e4ba9-f721-46a8-ab6a-a1d7e6e1d5f8:
+    id: node_type
+    bundles:
+      landingpage: landingpage
+    negate: false
+    context_mapping:
+      node: node
+    uuid: db8e4ba9-f721-46a8-ab6a-a1d7e6e1d5f8
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,29 @@
+uuid: 1d39b005-cc38-4489-b6f0-b90887c2fd79
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_knolclass
+    - node.type.knol
+    - taxonomy.vocabulary.knolclass
+id: node.knol.field_knolclass
+field_name: field_knolclass
+entity_type: node
+bundle: knol
+label: KnolClass
+description: 'Verknüpfung mit Knowledge-Kategorie'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      knolclass: knolclass
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

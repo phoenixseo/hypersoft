@@ -1,0 +1,8 @@
+uuid: 83f8f23f-b645-47eb-b22d-957537b91e96
+langcode: de
+status: true
+dependencies: {  }
+name: ConnectionTyp
+vid: connection_typ
+description: Kontaktpunkt
+weight: 0

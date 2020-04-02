@@ -1,0 +1,33 @@
+uuid: 87ee8e5a-248e-48d2-b5cc-2f012339e60b
+langcode: de
+status: true
+dependencies:
+  config:
+    - system.menu.menue-all
+  module:
+    - menu_block
+    - system
+  theme:
+    - corporateplus
+id: menuall_3
+theme: corporateplus
+region: banner
+weight: -40
+provider: null
+plugin: 'menu_block:menue-all'
+settings:
+  id: 'menu_block:menue-all'
+  label: 'Menü-All fixiert auf Produkte-Submenüeinträge'
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 1
+  expand: 0
+  parent: 'menue-all:menu_link_content:2ace0cd4-c9fa-47e9-b649-931c99381f87'
+  suggestion: menue_all
+visibility:
+  request_path:
+    id: request_path
+    pages: '/prd*'
+    negate: false
+    context_mapping: {  }

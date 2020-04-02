@@ -1,0 +1,22 @@
+uuid: 0a0e4080-295a-4fe1-8fed-29892c5fb628
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+id: fachhandel_url_path
+label: 'Fachhandel URL Path'
+type: 'canonical_entities:node'
+pattern: '/vertrieb/[node:title]'
+selection_criteria:
+  346eff80-c182-430a-97e1-66b80d9dc805:
+    id: node_type
+    bundles:
+      fachhandel: fachhandel
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 346eff80-c182-430a-97e1-66b80d9dc805
+selection_logic: and
+weight: -5
+relationships: {  }

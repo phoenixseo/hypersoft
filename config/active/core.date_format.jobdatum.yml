@@ -1,0 +1,8 @@
+uuid: 82d59b62-f09c-4831-8bd1-7527292078f9
+langcode: de
+status: true
+dependencies: {  }
+id: jobdatum
+label: JobDatum
+locked: false
+pattern: 'l, j. F Y'

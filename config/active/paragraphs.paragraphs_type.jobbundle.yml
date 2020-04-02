@@ -1,0 +1,10 @@
+uuid: bac972be-889f-43bf-818b-9b480f5a46df
+langcode: de
+status: true
+dependencies: {  }
+id: jobbundle
+label: JobBundle
+icon_uuid: null
+icon_default: null
+description: 'Die Felder für eine Job-Beschreibung'
+behavior_plugins: {  }

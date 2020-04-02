@@ -1,0 +1,25 @@
+uuid: b4a3551b-fada-4038-bcf4-68ded0287bac
+langcode: de
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - corporateplus
+id: seitentitel
+theme: corporateplus
+region: content
+weight: -44
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: Seitentitel
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /blog
+    negate: true
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 8d7acce0-54c4-48c8-bdae-0bc52609e22f
+langcode: de
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0f562ca8-9788-40d8-a5f1-bae2a78dd710'
+  module:
+    - block_content
+    - system
+  theme:
+    - corporateplus
+id: fachhandlergesucht
+theme: corporateplus
+region: content_top
+weight: -41
+provider: null
+plugin: 'block_content:0f562ca8-9788-40d8-a5f1-bae2a78dd710'
+settings:
+  id: 'block_content:0f562ca8-9788-40d8-a5f1-bae2a78dd710'
+  label: 'Fachhändler gesucht'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/hr\r\n/partner\r\n/vertrieb*"
+    negate: false
+    context_mapping: {  }

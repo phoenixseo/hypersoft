@@ -1,0 +1,22 @@
+uuid: 1d90153b-fabd-4f1a-9b24-a98c74982c6f
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+id: branche_url_path
+label: 'Branche URL Path'
+type: 'canonical_entities:node'
+pattern: '/branche/[node:title]'
+selection_criteria:
+  a566873d-2307-408a-a7a5-2d45408ab8ff:
+    id: node_type
+    bundles:
+      branche: branche
+    negate: false
+    context_mapping:
+      node: node
+    uuid: a566873d-2307-408a-a7a5-2d45408ab8ff
+selection_logic: and
+weight: -5
+relationships: {  }

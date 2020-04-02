@@ -1,0 +1,11 @@
+uuid: 6f1d914e-2cb2-4de8-afa4-a62557fe332b
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.fachhandel
+id: node.fachhandel
+target_entity_type_id: node
+target_bundle: fachhandel
+default_langcode: site_default
+language_alterable: false

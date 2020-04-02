@@ -5,14 +5,10 @@ dependencies:
   config:
     - entity_browser.browser.browse_files_modal
     - field.field.node.page.body
-    - field.field.node.page.field_connections
     - field.field.node.page.field_image
     - field.field.node.page.field_mehr_wissen
     - field.field.node.page.field_mt_banner_image
-    - field.field.node.page.field_mt_slideshow
-    - field.field.node.page.field_mt_slideshow_image
-    - field.field.node.page.field_mt_slideshow_text
-    - field.field.node.page.field_mt_subheader_body
+    - field.field.node.page.field_mt_highlight
     - field.field.node.page.field_seitenabschnitte
     - node.type.page
   module:
@@ -24,12 +20,9 @@ dependencies:
 third_party_settings:
   field_group:
     group_slideshow:
-      children:
-        - field_mt_slideshow
-        - field_mt_slideshow_text
-        - field_mt_slideshow_image
+      children: {  }
       parent_name: ''
-      weight: 9
+      weight: 12
       format_type: details
       format_settings:
         id: ''
@@ -39,6 +32,32 @@ third_party_settings:
         required_fields: true
       label: Slideshow
       region: content
+    group_connections:
+      children: {  }
+      parent_name: ''
+      weight: 1
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Connections
+      region: content
+    group_highlights:
+      children:
+        - field_mt_highlight
+      parent_name: ''
+      weight: 9
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: 'Highlights sind kurze, knackige Inhalte, z.B. für Kernfeatures mit Bild, Kurztext und ggf. Link. Diese Einheiten werden jeweils abwechselnd mit Bild + Text | Text + Bild untereinander dargestellt.'
+        open: false
+        required_fields: true
+      label: Highlights
 _core:
   default_config_hash: KSvzyFhdLuxniTsunUnUfpfMmod2l57GibtVjL8ymHM
 id: node.page.default
@@ -48,28 +67,22 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 6
+    weight: 7
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
+      show_summary: false
     third_party_settings: {  }
     region: content
   created:
     type: datetime_timestamp
-    weight: 11
+    weight: 14
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_connections:
-    weight: 1
-    settings:
-      display_label: true
-    third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   field_image:
-    weight: 5
+    weight: 6
     settings:
       entity_browser: browse_files_modal
       field_widget_remove: true
@@ -83,16 +96,17 @@ content:
     type: entity_browser_file
     region: content
   field_mehr_wissen:
-    weight: 8
+    weight: 11
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
   field_mt_banner_image:
-    weight: 2
+    weight: 3
     settings:
       entity_browser: browse_files_modal
       field_widget_remove: true
@@ -105,46 +119,20 @@ content:
     third_party_settings: {  }
     type: entity_browser_file
     region: content
-  field_mt_slideshow:
-    weight: 11
+  field_mt_highlight:
+    weight: 10
     settings:
-      display_label: true
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: mt_highlight
     third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
-  field_mt_slideshow_image:
-    weight: 13
-    settings:
-      entity_browser: browse_files_modal
-      field_widget_remove: true
-      selection_mode: selection_edit
-      preview_image_style: file_entity_browser_thumbnail
-      field_widget_edit: true
-      field_widget_replace: false
-      open: false
-      view_mode: default
-    third_party_settings: {  }
-    type: entity_browser_file
-    region: content
-  field_mt_slideshow_text:
-    weight: 12
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea
-    region: content
-  field_mt_subheader_body:
-    weight: 4
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea_with_summary
+    type: entity_reference_paragraphs
     region: content
   field_seitenabschnitte:
-    weight: 7
+    weight: 8
     settings:
       title: Seitenabschnitt
       title_plural: Seitenabschnitte
@@ -164,14 +152,14 @@ content:
     region: content
   langcode:
     type: language_select
-    weight: 3
+    weight: 4
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 15
+    weight: 17
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -179,21 +167,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 12
+    weight: 15
     third_party_settings: {  }
     region: content
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 18
     third_party_settings: {  }
     region: content
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 14
+    weight: 16
     third_party_settings: {  }
     region: content
   title:
@@ -205,17 +193,23 @@ content:
     third_party_settings: {  }
     region: content
   translation:
-    weight: 13
+    weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 10
+    weight: 13
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
     region: content
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }

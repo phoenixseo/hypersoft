@@ -1,0 +1,21 @@
+uuid: 7420e323-bc31-425d-b3a9-b5295aa3dd8a
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_job_description
+    - paragraphs.paragraphs_type.jobbundle
+  module:
+    - text
+id: paragraph.jobbundle.field_job_description
+field_name: field_job_description
+entity_type: paragraph
+bundle: jobbundle
+label: 'Wir suchen Dich'
+description: 'Job Description (Beschreibung)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

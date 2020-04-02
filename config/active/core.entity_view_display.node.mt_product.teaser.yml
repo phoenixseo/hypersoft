@@ -5,7 +5,9 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.mt_product.body
+    - field.field.node.mt_product.field_file_downloads
     - field.field.node.mt_product.field_image
+    - field.field.node.mt_product.field_kundenstimmen
     - field.field.node.mt_product.field_mt_banner_image
     - field.field.node.mt_product.field_mt_buy_link
     - field.field.node.mt_product.field_mt_collections
@@ -18,11 +20,10 @@ dependencies:
     - field.field.node.mt_product.field_mt_product_availability
     - field.field.node.mt_product.field_mt_product_code
     - field.field.node.mt_product.field_mt_products_tags
-    - field.field.node.mt_product.field_mt_slideshow
-    - field.field.node.mt_product.field_mt_slideshow_image
-    - field.field.node.mt_product.field_mt_slideshow_text
     - field.field.node.mt_product.field_mt_subheader_body
     - field.field.node.mt_product.field_mt_video
+    - field.field.node.mt_product.field_produkt_aktiv
+    - field.field.node.mt_product.field_seitenabschnitte
     - image.style.large
     - node.type.mt_product
   module:
@@ -81,6 +82,8 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_file_downloads: true
+  field_kundenstimmen: true
   field_mt_banner_image: true
   field_mt_collections: true
   field_mt_content_tabs: true
@@ -90,10 +93,9 @@ hidden:
   field_mt_pricing_table_item: true
   field_mt_product_availability: true
   field_mt_product_code: true
-  field_mt_slideshow: true
-  field_mt_slideshow_image: true
-  field_mt_slideshow_text: true
   field_mt_subheader_body: true
   field_mt_video: true
+  field_produkt_aktiv: true
+  field_seitenabschnitte: true
   langcode: true
   links: true

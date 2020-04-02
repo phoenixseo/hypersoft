@@ -11,7 +11,7 @@ _core:
 id: corporateplus_content
 theme: corporateplus
 region: content
-weight: -49
+weight: -40
 provider: null
 plugin: system_main_block
 settings:

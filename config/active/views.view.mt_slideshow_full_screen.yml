@@ -22,7 +22,6 @@ description: 'Drives the Full Screen Slideshow on designated pages.'
 tag: ''
 base_table: node_field_data
 base_field: nid
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -642,7 +641,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "{{ field_mt_slideshow_path }}\n{{ field_mt_slideshow_text }}\n<div class=\"tp-caption__buttons-container\">\n<a class=\"tp-caption__button\" href=\"{{ field_mt_slideshow_path_1 }}\">View Details</a>\n</div>"
+            text: "{{ field_mt_slideshow_path }}\r\n{{ field_mt_slideshow_text }}\r\n<div class=\"tp-caption__buttons-container\">\r\n<a class=\"tp-caption__button\" href=\"{{ field_mt_slideshow_path_1 }}\">Jetzt Informieren</a>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -704,6 +703,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -741,6 +742,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -783,6 +786,8 @@ display:
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -821,6 +826,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''

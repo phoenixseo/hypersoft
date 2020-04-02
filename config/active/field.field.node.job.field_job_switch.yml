@@ -1,0 +1,23 @@
+uuid: 27282365-b6fe-4f5a-ad82-a0c54f211f44
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_switch
+    - node.type.job
+id: node.job.field_job_switch
+field_name: field_job_switch
+entity_type: node
+bundle: job
+label: 'Job vakant?'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

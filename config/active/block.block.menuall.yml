@@ -1,0 +1,25 @@
+uuid: ac42214c-65cc-4f6c-a0a9-0e638b3294e2
+langcode: de
+status: true
+dependencies:
+  config:
+    - system.menu.menue-all
+  module:
+    - system
+  theme:
+    - corporateplus
+id: menuall
+theme: corporateplus
+region: slideout
+weight: 0
+provider: null
+plugin: 'system_menu_block:menue-all'
+settings:
+  id: 'system_menu_block:menue-all'
+  label: Menü-All
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,33 @@
+uuid: 639fe8e1-afc6-426c-923c-1feebdf5989c
+langcode: de
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3bc9cedf-fc8e-4298-a27f-d040e31cfec3'
+  module:
+    - block_content
+    - node
+  theme:
+    - corporateplus
+id: jobcalltoaction
+theme: corporateplus
+region: featured_top
+weight: -41
+provider: null
+plugin: 'block_content:3bc9cedf-fc8e-4298-a27f-d040e31cfec3'
+settings:
+  id: 'block_content:3bc9cedf-fc8e-4298-a27f-d040e31cfec3'
+  label: 'Job Call to Action'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      job: job
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

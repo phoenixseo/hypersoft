@@ -16,7 +16,6 @@ description: 'Displays the latest entries using the content types Article.'
 tag: ''
 base_table: node_field_data
 base_field: nid
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -148,15 +147,15 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: 100
+            max_length: 104
             word_boundary: true
             ellipsis: true
             more_link: false
             more_link_text: ''
             more_link_path: ''
-            strip_tags: false
+            strip_tags: true
             trim: true
-            preserve_tags: ''
+            preserve_tags: '<strong> <em>'
             html: true
           element_type: ''
           element_class: ''
@@ -171,9 +170,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: text_summary_or_trimmed
+          type: text_trimmed
           settings:
-            trim_length: 600
+            trim_length: 250
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -185,63 +184,6 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        comment_count:
-          id: comment_count
-          table: comment_entity_statistics
-          field: comment_count
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          set_precision: false
-          precision: 0
-          decimal: .
-          separator: ','
-          format_plural: true
-          format_plural_string: !!binary MSBjb21tZW50A0Bjb3VudCBjb21tZW50cw==
-          prefix: '- '
-          suffix: ''
-          plugin_id: numeric
         created:
           id: created
           table: node_field_data
@@ -335,6 +277,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -373,6 +317,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -412,6 +358,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -457,7 +405,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Latest Blog Posts'
+      title: Neuigkeiten
       header: {  }
       footer: {  }
       empty: {  }
@@ -466,8 +414,8 @@ display:
       display_extenders: {  }
       use_more: true
       use_more_always: true
-      use_more_text: 'More Events'
-      link_url: /articles
+      use_more_text: Weitere
+      link_url: /blog
       link_display: custom_url
       css_class: 'view-articles-list-2 clearfix'
     cache_metadata:

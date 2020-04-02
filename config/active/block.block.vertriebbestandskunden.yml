@@ -1,0 +1,31 @@
+uuid: 6038638d-06b2-40dd-93e7-e25e21027193
+langcode: de
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:726c16e8-fbbb-4cbb-987d-dfbf8a235de6'
+  module:
+    - block_content
+    - system
+  theme:
+    - corporateplus
+id: vertriebbestandskunden
+theme: corporateplus
+region: sidebar_second
+weight: -38
+provider: null
+plugin: 'block_content:726c16e8-fbbb-4cbb-987d-dfbf8a235de6'
+settings:
+  id: 'block_content:726c16e8-fbbb-4cbb-987d-dfbf8a235de6'
+  label: 'Vertrieb: Bestandskunden'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/kontakt\r\n/vertrieb*"
+    negate: false
+    context_mapping: {  }

@@ -10,10 +10,6 @@ dependencies:
     - field.field.node.mt_service.field_mt_highlight
     - field.field.node.mt_service.field_mt_price
     - field.field.node.mt_service.field_mt_service_tags
-    - field.field.node.mt_service.field_mt_slideshow
-    - field.field.node.mt_service.field_mt_slideshow_image
-    - field.field.node.mt_service.field_mt_slideshow_text
-    - field.field.node.mt_service.field_mt_subheader_body
     - field.field.node.mt_service.field_mt_video
     - image.style.large
     - node.type.mt_service
@@ -85,13 +81,6 @@ content:
       link: true
     third_party_settings: {  }
     region: content
-  field_mt_subheader_body:
-    weight: 0
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
   field_mt_video:
     weight: 4
     label: hidden
@@ -112,7 +101,4 @@ content:
     third_party_settings: {  }
 hidden:
   field_mt_banner_image: true
-  field_mt_slideshow: true
-  field_mt_slideshow_image: true
-  field_mt_slideshow_text: true
   langcode: true

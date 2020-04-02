@@ -12,7 +12,7 @@ dependencies:
 id: backgroundimageblockproducts
 theme: corporateplus
 region: banner
-weight: -57
+weight: -42
 provider: null
 plugin: 'block_content:00297784-2f78-41fb-bad4-a17a6086194a'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/products-2-col\r\n/products-3-col\r\n/products-isotope\r\n/products-list\r\n/products-masonry"
+    pages: "/prd*\r\n/prd/*\r\n/prd/*/*"
     negate: false
     context_mapping: {  }

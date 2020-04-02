@@ -1,0 +1,8 @@
+uuid: fbb6080e-583d-43d6-89bf-eeac1f9d9903
+langcode: de
+status: true
+dependencies: {  }
+id: menue-all
+label: Menü-All
+description: 'Umfassendes Hauptmenü für Anzeige innerhalb Seite oder Ausklappbereich'
+locked: false

@@ -1,5 +1,5 @@
-uuid: 8f6ca795-9af5-40f9-905e-082d2bb4a4be
-langcode: en
+uuid: df47096f-cca2-4c11-8853-479d93734cab
+langcode: de
 status: true
 dependencies:
   config:
@@ -16,9 +16,9 @@ provider: null
 plugin: 'views_block:mt_latest-block_1'
 settings:
   id: 'views_block:mt_latest-block_1'
-  label: ''
+  label: Articles
   provider: views
   label_display: '0'
-  views_label: ''
+  views_label: Articles
   items_per_page: none
 visibility: {  }

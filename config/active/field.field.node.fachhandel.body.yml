@@ -1,0 +1,23 @@
+uuid: 460f2f60-252a-48e1-8dd2-7fab7f9ea50e
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.fachhandel
+  module:
+    - text
+id: node.fachhandel.body
+field_name: body
+entity_type: node
+bundle: fachhandel
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

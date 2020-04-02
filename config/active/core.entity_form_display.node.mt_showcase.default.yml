@@ -6,23 +6,40 @@ dependencies:
     - entity_browser.browser.browse_files_modal
     - field.field.node.mt_showcase.body
     - field.field.node.mt_showcase.field_image
+    - field.field.node.mt_showcase.field_kundenstimmen
     - field.field.node.mt_showcase.field_mt_banner_image
     - field.field.node.mt_showcase.field_mt_clients_tags
     - field.field.node.mt_showcase.field_mt_content_collapses
+    - field.field.node.mt_showcase.field_mt_highlight
     - field.field.node.mt_showcase.field_mt_showcase_tags
-    - field.field.node.mt_showcase.field_mt_slideshow
-    - field.field.node.mt_showcase.field_mt_slideshow_image
-    - field.field.node.mt_showcase.field_mt_slideshow_text
     - field.field.node.mt_showcase.field_mt_subheader_body
     - field.field.node.mt_showcase.field_mt_subtitle
     - field.field.node.mt_showcase.field_mt_video
+    - field.field.node.mt_showcase.field_seitenabschnitte
     - node.type.mt_showcase
   module:
     - entity_browser
+    - field_group
     - paragraphs
     - path
     - text
     - video_embed_field
+third_party_settings:
+  field_group:
+    group_highlights:
+      children:
+        - field_mt_highlight
+      parent_name: ''
+      weight: 8
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: 'Highlights sind kurze, knackige Inhalte, z.B. für Kernfeatures mit Bild, Kurztext und ggf. Link. Diese Einheiten werden jeweils abwechselnd mit Bild + Text | Text + Bild untereinander dargestellt.'
+        open: false
+        required_fields: true
+      label: Highlights
 id: node.mt_showcase.default
 targetEntityType: node
 bundle: mt_showcase
@@ -30,11 +47,12 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 6
+    weight: 7
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
+      show_summary: false
     third_party_settings: {  }
     region: content
   created:
@@ -44,7 +62,7 @@ content:
     third_party_settings: {  }
     region: content
   field_image:
-    weight: 4
+    weight: 5
     settings:
       entity_browser: browse_files_modal
       field_widget_remove: true
@@ -56,6 +74,16 @@ content:
       view_mode: default
     third_party_settings: {  }
     type: entity_browser_file
+    region: content
+  field_kundenstimmen:
+    weight: 123
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_mt_banner_image:
     weight: 1
@@ -72,75 +100,67 @@ content:
     type: entity_browser_file
     region: content
   field_mt_clients_tags:
-    weight: 9
+    weight: 11
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
   field_mt_content_collapses:
-    type: entity_reference_paragraphs
-    weight: 7
+    type: paragraphs
+    weight: 12
+    region: content
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
+      title: Seitenabschnitt
+      title_plural: Seitenabschnitte
       edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
       add_mode: dropdown
       form_display_mode: default
       default_paragraph_type: ''
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
     third_party_settings: {  }
+  field_mt_highlight:
+    weight: 9
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: mt_highlight
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
     region: content
   field_mt_showcase_tags:
-    weight: 8
+    weight: 13
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_mt_slideshow:
-    weight: 13
-    settings:
-      display_label: true
-    third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
-  field_mt_slideshow_image:
-    weight: 11
-    settings:
-      entity_browser: browse_files_modal
-      field_widget_remove: true
-      selection_mode: selection_edit
-      preview_image_style: file_entity_browser_thumbnail
-      field_widget_edit: true
-      field_widget_replace: false
-      open: false
-      view_mode: default
-    third_party_settings: {  }
-    type: entity_browser_file
-    region: content
-  field_mt_slideshow_text:
-    weight: 12
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea
-    region: content
   field_mt_subheader_body:
-    weight: 2
+    weight: 3
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
+      show_summary: false
     third_party_settings: {  }
     type: text_textarea_with_summary
     region: content
   field_mt_subtitle:
-    weight: 3
+    weight: 4
     settings:
       size: 60
       placeholder: ''
@@ -148,10 +168,29 @@ content:
     type: string_textfield
     region: content
   field_mt_video:
-    weight: 5
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: video_embed_field_textfield
+    region: content
+  field_seitenabschnitte:
+    weight: 10
+    settings:
+      title: Seitenabschnitt
+      title_plural: Seitenabschnitte
+      edit_mode: closed
+      closed_mode: preview
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: modal
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: '0'
+    third_party_settings: {  }
+    type: paragraphs
     region: content
   langcode:
     type: language_select
@@ -202,6 +241,12 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
     region: content
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }

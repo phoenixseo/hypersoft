@@ -1,0 +1,30 @@
+uuid: e075fd5a-e633-404d-afae-da5c4aafe3b4
+langcode: de
+status: true
+dependencies:
+  config:
+    - views.view.connections
+  module:
+    - system
+    - views
+  theme:
+    - corporateplus
+id: views_block__connections_block_2
+theme: corporateplus
+region: featured
+weight: 0
+provider: null
+plugin: 'views_block:connections-block_2'
+settings:
+  id: 'views_block:connections-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /connect
+    negate: false
+    context_mapping: {  }

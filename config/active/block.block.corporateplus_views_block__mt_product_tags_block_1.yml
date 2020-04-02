@@ -12,7 +12,7 @@ dependencies:
 id: corporateplus_views_block__mt_product_tags_block_1
 theme: corporateplus
 region: content_bottom_first
-weight: -62
+weight: -44
 provider: null
 plugin: 'views_block:mt_product_tags-block_1'
 settings:

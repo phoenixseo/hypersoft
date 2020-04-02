@@ -1,0 +1,25 @@
+uuid: 78ea91a3-2f65-4202-817d-17c99d063899
+langcode: de
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:aa0b1081-1e72-4062-83c1-3064f474a67a'
+  module:
+    - block_content
+  theme:
+    - corporateplus
+id: calltoaction_2
+theme: corporateplus
+region: footer_top_first
+weight: 0
+provider: null
+plugin: 'block_content:aa0b1081-1e72-4062-83c1-3064f474a67a'
+settings:
+  id: 'block_content:aa0b1081-1e72-4062-83c1-3064f474a67a'
+  label: 'Call to action'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

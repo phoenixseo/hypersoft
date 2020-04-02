@@ -56,12 +56,12 @@ sidebar_first_region_paddings: 0
 sidebar_second_animation_effect: fadeInRight
 sidebar_second_blocks_paddings: 0
 sidebar_second_region_paddings: 0
-content_bottom_layout_container: container-fluid
+content_bottom_layout_container: container
 content_bottom_separator: region--no-separator
 content_bottom_background_color: 'region--light-typography region--black-background'
 content_bottom_animation_effect: fadeIn
 content_bottom_blocks_paddings: 0
-content_bottom_region_paddings: 1
+content_bottom_region_paddings: 0
 featured_top_layout_container: container
 featured_top_separator: region--separator-border-top
 featured_top_background_color: 'region--dark-typography region--white-background'
@@ -134,7 +134,7 @@ rs_slideshow_fullscreen_navigation_style: bullets
 rs_slideshow_fullscreen_bullets_position: right
 rs_slideshow_fullscreen_touch_swipe: 1
 transparent_header_state: 1
-transparent_header_opacity: '0'
+transparent_header_opacity: '90'
 rs_slideshow_fullwidth_effect: random
 rs_slideshow_fullwidth_effect_time: '10'
 rs_slideshow_fullwidth_initial_height: '650'
@@ -153,7 +153,7 @@ rs_slideshow_internal_initial_height: '540'
 rs_slideshow_internal_navigation_style: bullets
 rs_slideshow_internal_banner_bullets_position: left
 rs_slideshow_internal_touch_swipe: 1
-rs_slideshow_caption_opacity: '45'
+rs_slideshow_caption_opacity: '0'
 in_page_slider_effect: slide
 owl_products_autoplay: 1
 owl_products_effect_time: '5'
@@ -180,8 +180,8 @@ features:
   comment_user_verification: true
   favicon: true
 logo:
-  use_default: false
-  path: 'public://hypersoft-logo.png'
+  use_default: true
+  path: 'public://hs-logo.png'
 favicon:
   use_default: true
   path: 'public://hs_favicon.ico'
@@ -203,8 +203,8 @@ share_links_print_position: node-side
 owl_team_members_autoplay: 0
 owl_team_members_effect_time: '5'
 inverse_header_state: 1
-inverted_header_state: 1
-rs_slideshow_background_opacity: '30'
+inverted_header_state: 0
+rs_slideshow_background_opacity: '10'
 banner_id: banner
 content_top_id: content-top
 content_top_highlighted_id: content-top-highlighted

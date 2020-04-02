@@ -1,0 +1,22 @@
+uuid: a5909e4e-6474-4f54-9188-d713291966b6
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+id: benefits_url_path
+label: 'Benefits URL Path'
+type: 'canonical_entities:node'
+pattern: '/benefits/[node:title]'
+selection_criteria:
+  8e4e1b6b-a1d6-4227-bb4f-aac8225b2837:
+    id: node_type
+    bundles:
+      mt_benefit: mt_benefit
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 8e4e1b6b-a1d6-4227-bb4f-aac8225b2837
+selection_logic: and
+weight: -5
+relationships: {  }

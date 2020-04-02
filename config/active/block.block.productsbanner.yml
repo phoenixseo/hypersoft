@@ -11,7 +11,7 @@ dependencies:
 id: productsbanner
 theme: corporateplus
 region: hidden_blocks_collection
-weight: 0
+weight: -42
 provider: null
 plugin: 'block_content:7c94a27f-fc67-46b3-8d8d-d2c189703e6b'
 settings:

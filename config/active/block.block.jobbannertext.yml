@@ -1,0 +1,25 @@
+uuid: fee708e8-4cb3-4cb1-8d73-069980f88ab9
+langcode: de
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:52775749-3f4e-4004-b37c-29cff2329e55'
+  module:
+    - block_content
+  theme:
+    - corporateplus
+id: jobbannertext
+theme: corporateplus
+region: hidden_blocks_collection
+weight: -41
+provider: null
+plugin: 'block_content:52775749-3f4e-4004-b37c-29cff2329e55'
+settings:
+  id: 'block_content:52775749-3f4e-4004-b37c-29cff2329e55'
+  label: 'Job Banner - Text'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

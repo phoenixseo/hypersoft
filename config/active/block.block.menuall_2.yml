@@ -1,0 +1,30 @@
+uuid: f092aff5-be5e-42c0-8924-57c129962b17
+langcode: de
+status: true
+dependencies:
+  config:
+    - system.menu.menue-all
+  module:
+    - system
+  theme:
+    - corporateplus
+id: menuall_2
+theme: corporateplus
+region: sidebar_second
+weight: -44
+provider: null
+plugin: 'system_menu_block:menue-all'
+settings:
+  id: 'system_menu_block:menue-all'
+  label: Menü-All
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: "/intl*\r\n/hr*\r\n/benefits*\r\n/service*"
+    negate: false
+    context_mapping: {  }

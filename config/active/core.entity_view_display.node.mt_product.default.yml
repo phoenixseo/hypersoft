@@ -19,9 +19,6 @@ dependencies:
     - field.field.node.mt_product.field_mt_product_availability
     - field.field.node.mt_product.field_mt_product_code
     - field.field.node.mt_product.field_mt_products_tags
-    - field.field.node.mt_product.field_mt_slideshow
-    - field.field.node.mt_product.field_mt_slideshow_image
-    - field.field.node.mt_product.field_mt_slideshow_text
     - field.field.node.mt_product.field_mt_subheader_body
     - field.field.node.mt_product.field_mt_video
     - field.field.node.mt_product.field_produkt_aktiv
@@ -186,8 +183,5 @@ hidden:
   field_mt_landscape_image: true
   field_mt_most_popular: true
   field_mt_pricing_table_item: true
-  field_mt_slideshow: true
-  field_mt_slideshow_image: true
-  field_mt_slideshow_text: true
   field_produkt_aktiv: true
   langcode: true

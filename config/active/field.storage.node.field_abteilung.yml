@@ -1,0 +1,20 @@
+uuid: e0d69ea7-4739-4f65-9ea4-e6ce2e77b72c
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_abteilung
+field_name: field_abteilung
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

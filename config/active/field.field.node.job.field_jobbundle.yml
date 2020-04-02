@@ -1,0 +1,82 @@
+uuid: 552931c2-a9fb-418e-af62-f3dfcba25c33
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_jobbundle
+    - node.type.job
+    - paragraphs.paragraphs_type.jobbundle
+  module:
+    - entity_reference_revisions
+id: node.job.field_jobbundle
+field_name: field_jobbundle
+entity_type: node
+bundle: job
+label: JobBundle
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      jobbundle: jobbundle
+    target_bundles_drag_drop:
+      jobbundle:
+        enabled: true
+        weight: 19
+      mt_collapse:
+        weight: 20
+        enabled: false
+      mt_dropdown:
+        weight: 21
+        enabled: false
+      mt_fancy_linked_image:
+        weight: 22
+        enabled: false
+      mt_fancy_tab:
+        weight: 23
+        enabled: false
+      mt_featured_linked_text_tile:
+        weight: 24
+        enabled: false
+      mt_highlight:
+        weight: 25
+        enabled: false
+      mt_icon_features:
+        weight: 26
+        enabled: false
+      mt_main_slideshow_slide:
+        weight: 27
+        enabled: false
+      mt_map_location:
+        weight: 28
+        enabled: false
+      mt_media_tab:
+        weight: 29
+        enabled: false
+      mt_tab:
+        weight: 30
+        enabled: false
+      mt_video_gallery_slide:
+        weight: 31
+        enabled: false
+      sas_bild:
+        weight: 32
+        enabled: false
+      sas_media_object:
+        weight: 33
+        enabled: false
+      sas_text:
+        weight: 34
+        enabled: false
+      sas_video:
+        weight: 35
+        enabled: false
+      sas_zitat:
+        weight: 36
+        enabled: false
+field_type: entity_reference_revisions

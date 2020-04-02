@@ -1,0 +1,31 @@
+uuid: d6cd59af-9d2b-453a-9cc4-63b053e07837
+langcode: de
+status: true
+dependencies:
+  content:
+    - 'block_content:mt_background_image_block:c54ef3df-5192-4c80-be89-b755c5c2b81e'
+  module:
+    - block_content
+    - system
+  theme:
+    - corporateplus
+id: jobbanner
+theme: corporateplus
+region: banner
+weight: -41
+provider: null
+plugin: 'block_content:c54ef3df-5192-4c80-be89-b755c5c2b81e'
+settings:
+  id: 'block_content:c54ef3df-5192-4c80-be89-b755c5c2b81e'
+  label: 'Job Banner'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/hr/jobs*\r\n/jobs*"
+    negate: false
+    context_mapping: {  }

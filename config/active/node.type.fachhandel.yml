@@ -1,0 +1,17 @@
+uuid: 2d9d4170-4cdd-4976-b05f-9b73d4c37405
+langcode: de
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Fachhandel
+type: fachhandel
+description: 'URL Path: Automatisch. Fachhandel-Eintrag (Location, mit Adresse, Telefon, URL, Bild etc.)'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

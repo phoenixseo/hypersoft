@@ -1,0 +1,23 @@
+uuid: 63c8bb42-b933-4f4a-b200-5537c18d9299
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_jahreszahl
+    - node.type.history
+id: node.history.field_jahreszahl
+field_name: field_jahreszahl
+entity_type: node
+bundle: history
+label: Jahreszahl
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1900
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

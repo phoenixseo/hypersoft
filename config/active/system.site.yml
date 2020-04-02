@@ -4,8 +4,8 @@ mail: noreply@domain.com
 slogan: ''
 page:
   403: ''
-  404: /node/57
-  front: /node/35
+  404: ''
+  front: /node/123
 admin_compact_mode: false
 weight_select_max: 100
 langcode: de

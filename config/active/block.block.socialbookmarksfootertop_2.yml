@@ -1,0 +1,33 @@
+uuid: 3ece0dde-eddc-4269-b419-eaafe58ee6ec
+langcode: de
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e2f49ac6-d59a-4baa-aa3e-2f7fd2077b52'
+  module:
+    - block_content
+    - node
+  theme:
+    - corporateplus
+id: socialbookmarksfootertop_2
+theme: corporateplus
+region: sidebar_second
+weight: -40
+provider: null
+plugin: 'block_content:e2f49ac6-d59a-4baa-aa3e-2f7fd2077b52'
+settings:
+  id: 'block_content:e2f49ac6-d59a-4baa-aa3e-2f7fd2077b52'
+  label: Social
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      mt_product: mt_product
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

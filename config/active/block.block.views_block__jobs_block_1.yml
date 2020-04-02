@@ -1,0 +1,30 @@
+uuid: 3822c62a-7704-4754-8384-998a02408dbb
+langcode: de
+status: true
+dependencies:
+  config:
+    - views.view.jobs
+  module:
+    - system
+    - views
+  theme:
+    - corporateplus
+id: views_block__jobs_block_1
+theme: corporateplus
+region: content_top_highlighted
+weight: -42
+provider: null
+plugin: 'views_block:jobs-block_1'
+settings:
+  id: 'views_block:jobs-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/hr/jobs\r\n/jobs"
+    negate: false
+    context_mapping: {  }

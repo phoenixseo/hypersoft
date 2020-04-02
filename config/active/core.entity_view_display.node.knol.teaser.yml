@@ -1,0 +1,33 @@
+uuid: 11ee1413-1131-4b34-8195-c182bcb8a2dc
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.knol.body
+    - field.field.node.knol.field_knolclass
+    - node.type.knol
+  module:
+    - text
+    - user
+id: node.knol.teaser
+targetEntityType: node
+bundle: knol
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_knolclass: true
+  langcode: true

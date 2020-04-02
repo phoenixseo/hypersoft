@@ -1,0 +1,99 @@
+uuid: a8156a91-75d9-4ea2-8f04-db18765886f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.grid_view
+    - field.field.node.mt_product.body
+    - field.field.node.mt_product.field_file_downloads
+    - field.field.node.mt_product.field_image
+    - field.field.node.mt_product.field_kundenstimmen
+    - field.field.node.mt_product.field_mt_banner_image
+    - field.field.node.mt_product.field_mt_buy_link
+    - field.field.node.mt_product.field_mt_collections
+    - field.field.node.mt_product.field_mt_content_tabs
+    - field.field.node.mt_product.field_mt_highlight
+    - field.field.node.mt_product.field_mt_landscape_image
+    - field.field.node.mt_product.field_mt_most_popular
+    - field.field.node.mt_product.field_mt_price
+    - field.field.node.mt_product.field_mt_pricing_table_item
+    - field.field.node.mt_product.field_mt_product_availability
+    - field.field.node.mt_product.field_mt_product_code
+    - field.field.node.mt_product.field_mt_products_tags
+    - field.field.node.mt_product.field_mt_subheader_body
+    - field.field.node.mt_product.field_mt_video
+    - field.field.node.mt_product.field_produkt_aktiv
+    - field.field.node.mt_product.field_seitenabschnitte
+    - image.style.large
+    - node.type.mt_product
+  module:
+    - image
+    - lazy
+    - text
+    - user
+id: node.mt_product.grid_view
+targetEntityType: node
+bundle: mt_product
+mode: grid_view
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 2
+    settings:
+      trim_length: 200
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings:
+      lazy:
+        lazy_image: '1'
+    type: image
+    region: content
+  field_mt_collections:
+    weight: 3
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_mt_products_tags:
+    weight: 4
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_mt_subheader_body:
+    type: text_summary_or_trimmed
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 200
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_file_downloads: true
+  field_kundenstimmen: true
+  field_mt_banner_image: true
+  field_mt_buy_link: true
+  field_mt_content_tabs: true
+  field_mt_highlight: true
+  field_mt_landscape_image: true
+  field_mt_most_popular: true
+  field_mt_price: true
+  field_mt_pricing_table_item: true
+  field_mt_product_availability: true
+  field_mt_product_code: true
+  field_mt_video: true
+  field_produkt_aktiv: true
+  field_seitenabschnitte: true
+  langcode: true
+  links: true

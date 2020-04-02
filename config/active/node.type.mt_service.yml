@@ -6,11 +6,12 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus: {  }
-    parent: ''
+    available_menus:
+      - menue-all
+    parent: 'menue-all:menu_link_content:713f937f-115d-4d9f-ab7f-75a09c5b9f2f'
 name: Service
 type: mt_service
-description: 'A Service post is ideal for creating and displaying services.'
+description: 'URL Path: Automatisch. A Service post is ideal for creating and displaying services.'
 help: ''
 new_revision: true
 preview_mode: 1

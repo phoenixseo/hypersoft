@@ -6,11 +6,12 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus: {  }
-    parent: ''
+    available_menus:
+      - menue-all
+    parent: 'menue-all:menu_link_content:dd249409-d979-434f-aab5-194cbe1afe7a'
 name: Branche
 type: branche
-description: 'Branchen: Systemgastronomie, Ketten, Hotels etc.'
+description: 'URL Path: Automatisch. Branchen: Systemgastronomie, Ketten, Hotels etc.'
 help: ''
 new_revision: true
 preview_mode: 1

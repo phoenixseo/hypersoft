@@ -1,0 +1,33 @@
+uuid: 7ef5f63b-0afa-4f6c-81b4-5fada1b4c06b
+langcode: de
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:31a7a342-054e-407f-b35d-35bd26774d3d'
+  module:
+    - block_content
+    - node
+  theme:
+    - corporateplus
+id: knolheader
+theme: corporateplus
+region: banner
+weight: -38
+provider: null
+plugin: 'block_content:31a7a342-054e-407f-b35d-35bd26774d3d'
+settings:
+  id: 'block_content:31a7a342-054e-407f-b35d-35bd26774d3d'
+  label: KnolHeader
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      knol: knol
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

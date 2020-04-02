@@ -5,6 +5,9 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.landingpage.body
+    - field.field.node.landingpage.field_keywords
+    - field.field.node.landingpage.field_mehr_wissen
+    - field.field.node.landingpage.field_mt_banner_image
     - node.type.landingpage
   module:
     - text
@@ -28,4 +31,7 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_keywords: true
+  field_mehr_wissen: true
+  field_mt_banner_image: true
   langcode: true

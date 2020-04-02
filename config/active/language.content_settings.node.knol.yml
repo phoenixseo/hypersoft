@@ -1,0 +1,11 @@
+uuid: 097898af-5add-43e1-bb55-f8b29b20a9f9
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.knol
+id: node.knol
+target_entity_type_id: node
+target_bundle: knol
+default_langcode: site_default
+language_alterable: false

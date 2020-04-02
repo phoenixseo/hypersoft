@@ -1,0 +1,11 @@
+uuid: aca66797-443f-4286-a91c-9e4fb8ec05d8
+langcode: de
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.knolclass
+id: taxonomy_term.knolclass
+target_entity_type_id: taxonomy_term
+target_bundle: knolclass
+default_langcode: site_default
+language_alterable: false

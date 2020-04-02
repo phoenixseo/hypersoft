@@ -7,11 +7,11 @@ dependencies:
 third_party_settings:
   menu_ui:
     available_menus:
-      - main
-    parent: 'main:'
+      - menue-all
+    parent: 'menue-all:menu_link_content:7a095789-1ff3-4083-9b1e-e2c0850d31b9'
 name: Benefit
 type: mt_benefit
-description: 'A "Benefit" post is ideal for creating and displaying Benefits of your offerings to clients.'
+description: 'URL Path: Automatisch. A "Benefit" post is ideal for creating and displaying Benefits of your offerings to clients.'
 help: ''
 new_revision: true
 preview_mode: 1

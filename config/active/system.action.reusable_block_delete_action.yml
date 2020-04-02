@@ -1,0 +1,16 @@
+uuid: 4395c565-34bd-40bc-80e0-91389e9090e6
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - gutenberg
+  module:
+    - gutenberg
+_core:
+  default_config_hash: 6Nffs0f0augGItO21H-DDIcPxIBbB5txCgVuY_3xY8k
+id: reusable_block_delete_action
+label: 'Wiederverwendbaren Block löschen'
+type: block_content
+plugin: reusable_block_delete_action
+configuration: {  }

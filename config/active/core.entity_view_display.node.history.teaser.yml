@@ -1,0 +1,33 @@
+uuid: c5cefbb5-4b1c-492c-8775-72c6d9076b8a
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.history.body
+    - field.field.node.history.field_jahreszahl
+    - node.type.history
+  module:
+    - text
+    - user
+id: node.history.teaser
+targetEntityType: node
+bundle: history
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_jahreszahl: true
+  langcode: true

@@ -1,5 +1,5 @@
-uuid: 117d706a-ac02-4d7f-b080-9b27f634f46e
-langcode: en
+uuid: 5b3d2895-d615-447c-9208-38ac528f1847
+langcode: de
 status: true
 dependencies:
   config:
@@ -11,8 +11,8 @@ dependencies:
     - corporateplus
 id: views_block__mt_team_members_carousel_block_1
 theme: corporateplus
-region: content_top_highlighted
-weight: -36
+region: content_top
+weight: -42
 provider: null
 plugin: 'views_block:mt_team_members_carousel-block_1'
 settings:
@@ -25,6 +25,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /intl/team
+    pages: /hr
     negate: false
     context_mapping: {  }

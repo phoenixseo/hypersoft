@@ -11,13 +11,13 @@ dependencies:
     - corporateplus
 id: whyme
 theme: corporateplus
-region: featured_top
-weight: -60
+region: content
+weight: -39
 provider: null
 plugin: 'block_content:e063c791-93fb-43c0-a379-811a3a29ccc8'
 settings:
   id: 'block_content:e063c791-93fb-43c0-a379-811a3a29ccc8'
-  label: 'Why Us?'
+  label: 'Warum Hypersoft?'
   provider: block_content
   label_display: visible
   status: true

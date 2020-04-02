@@ -1,0 +1,31 @@
+uuid: 7e87e16f-729d-457d-ab83-e83c9fbc00ce
+langcode: de
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:bea1a670-ea11-41b1-81e0-01ce56c6154a'
+  module:
+    - block_content
+    - system
+  theme:
+    - corporateplus
+id: vertriebdoku
+theme: corporateplus
+region: sidebar_second
+weight: -37
+provider: null
+plugin: 'block_content:bea1a670-ea11-41b1-81e0-01ce56c6154a'
+settings:
+  id: 'block_content:bea1a670-ea11-41b1-81e0-01ce56c6154a'
+  label: 'Vertrieb: Doku'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/kontakt\r\n/vertrieb*"
+    negate: false
+    context_mapping: {  }

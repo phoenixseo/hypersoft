@@ -1,0 +1,30 @@
+uuid: c6b41a20-965e-4bed-b3df-8acee5b3856f
+langcode: de
+status: true
+dependencies:
+  config:
+    - views.view.services_grid
+  module:
+    - system
+    - views
+  theme:
+    - corporateplus
+id: views_block__services_grid_block_1
+theme: corporateplus
+region: content_bottom_second
+weight: -39
+provider: null
+plugin: 'views_block:services_grid-block_1'
+settings:
+  id: 'views_block:services_grid-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /service
+    negate: false
+    context_mapping: {  }

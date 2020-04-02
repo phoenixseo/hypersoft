@@ -1,0 +1,20 @@
+uuid: 7cc09945-7618-4ab7-9a2c-d97989bd0680
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_artikelkategorie
+field_name: field_artikelkategorie
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

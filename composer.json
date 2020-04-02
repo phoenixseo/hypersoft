@@ -23,18 +23,18 @@
         "cweagans/composer-patches": "^1.6.5",
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/console": "^1.0.2",
-        "drupal/core": "^8.7.0",
-        "drush/drush": "^9.0.0",
+        "drupal/core": "^8",
+        "drush/drush": "^10",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3",
         "zaporylie/composer-drupal-optimizations": "^1.0",
-        "drupal/better_exposed_filters": "^3",
+        "drupal/better_exposed_filters": "^4",
         "drupal/entity_reference_revisions": "^1",
         "drupal/field_group": "^3",
         "drupal/paragraphs": "^1",
         "drupal/superfish": "^1",
-        "drupal/video_embed_field": "^1",
+        "drupal/video_embed_field": "^2",
         "drupal/dropzonejs": "^2",
         "drupal/embed": "^1",
         "drupal/entity_browser": "^2",
@@ -54,10 +54,16 @@
         "drupal/token": "^1",
         "drupal/entity_reference_tree": "^1",
         "drupal/imageapi_optimize_resmushit": "^1",
-        "drupal/lazy": "^2",
-        "drupal/admin_toolbar": "^1",
+        "drupal/lazy": "^3",
+        "drupal/admin_toolbar": "^2",
         "drupal/media_entity_browser": "^2",
-        "drupal/tvi": "^1"
+        "drupal/tvi": "^1",
+        "drupal/ctools": "^3",
+        "drupal/image_effects": "^2",
+        "drupal/imageapi_optimize": "^2",
+        "drupal/simple_timeline": "^1",
+        "drupal/gutenberg": "^1",
+        "drupal/views_flipped_table": "^1"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -120,5 +126,6 @@
                 ".gitattributes": "../.gitattributes"
             }
         }
-    }
+    },
+    "homepage": "https://hypersoft.de"
 }

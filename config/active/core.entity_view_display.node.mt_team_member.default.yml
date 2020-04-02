@@ -4,13 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.mt_team_member.body
-    - field.field.node.mt_team_member.field_mt_banner_image
+    - field.field.node.mt_team_member.field_abteilung
     - field.field.node.mt_team_member.field_mt_facebook_account
     - field.field.node.mt_team_member.field_mt_linkedin_account
     - field.field.node.mt_team_member.field_mt_member_photo
-    - field.field.node.mt_team_member.field_mt_slideshow
-    - field.field.node.mt_team_member.field_mt_slideshow_image
-    - field.field.node.mt_team_member.field_mt_slideshow_text
     - field.field.node.mt_team_member.field_mt_subtitle
     - field.field.node.mt_team_member.field_mt_twitter_account
     - image.style.mt_member_photo
@@ -28,12 +25,20 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 5
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_abteilung:
+    weight: 0
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   field_mt_facebook_account:
-    weight: 2
+    weight: 3
     label: hidden
     settings:
       link_to_entity: false
@@ -41,7 +46,7 @@ content:
     type: string
     region: content
   field_mt_linkedin_account:
-    weight: 4
+    weight: 5
     label: hidden
     settings:
       link_to_entity: false
@@ -49,7 +54,7 @@ content:
     type: string
     region: content
   field_mt_member_photo:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       image_style: mt_member_photo
@@ -60,7 +65,7 @@ content:
     type: image
     region: content
   field_mt_subtitle:
-    weight: 0
+    weight: 1
     label: hidden
     settings:
       link_to_entity: false
@@ -68,7 +73,7 @@ content:
     type: string
     region: content
   field_mt_twitter_account:
-    weight: 3
+    weight: 4
     label: hidden
     settings:
       link_to_entity: false
@@ -76,13 +81,9 @@ content:
     type: string
     region: content
   links:
-    weight: 6
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_mt_banner_image: true
-  field_mt_slideshow: true
-  field_mt_slideshow_image: true
-  field_mt_slideshow_text: true
   langcode: true

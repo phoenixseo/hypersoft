@@ -1,0 +1,19 @@
+uuid: dfadf3b1-6842-4428-944d-6e09990e10db
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_e_mail
+    - node.type.fachhandel
+id: node.fachhandel.field_e_mail
+field_name: field_e_mail
+entity_type: node
+bundle: fachhandel
+label: E-Mail
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

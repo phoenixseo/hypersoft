@@ -1,0 +1,31 @@
+uuid: 7b7200c2-d32e-4ca5-92b6-3e2c02037366
+langcode: de
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:ac329bb8-6f7c-4394-90aa-c4dbcdff8764'
+  module:
+    - block_content
+    - system
+  theme:
+    - corporateplus
+id: interestedininvestingwithus_2
+theme: corporateplus
+region: content_top
+weight: -32
+provider: null
+plugin: 'block_content:ac329bb8-6f7c-4394-90aa-c4dbcdff8764'
+settings:
+  id: 'block_content:ac329bb8-6f7c-4394-90aa-c4dbcdff8764'
+  label: 'Interested in investing with us?'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /intl/invest
+    negate: false
+    context_mapping: {  }

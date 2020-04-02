@@ -9,10 +9,11 @@ third_party_settings:
     available_menus:
       - footer
       - main
+      - menue-all
     parent: 'main:'
 _core:
   default_config_hash: zhtPXoRcC6REiepM0k16zw__FDW5YOXDR6U2WlldTrs
-name: Page
+name: Seite
 type: page
 description: 'Benutzen Sie <em>Einfache Seiten</em> für statischen Inhalt, wie z.B. eine „Über uns“ Seite.'
 help: ''

@@ -1,0 +1,23 @@
+uuid: dc93540f-a390-4e39-a8ea-7487d8a63e7f
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.connection
+  module:
+    - text
+id: node.connection.body
+field_name: body
+entity_type: node
+bundle: connection
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,39 @@
+uuid: 301eb674-7ab0-4964-92f5-4dbac81415be
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.connection.body
+    - field.field.node.connection.field_connect_link
+    - field.field.node.connection.field_connection_typ
+    - field.field.node.connection.field_connections
+    - field.field.node.connection.field_image
+    - node.type.connection
+  module:
+    - text
+    - user
+id: node.connection.teaser
+targetEntityType: node
+bundle: connection
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 0
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_connect_link: true
+  field_connection_typ: true
+  field_connections: true
+  field_image: true
+  langcode: true

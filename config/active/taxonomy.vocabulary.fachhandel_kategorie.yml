@@ -1,0 +1,8 @@
+uuid: c479c63e-987e-4b02-b9fb-34ebaf097e4f
+langcode: de
+status: true
+dependencies: {  }
+name: 'Fachhandel Kategorie'
+vid: fachhandel_kategorie
+description: ''
+weight: 0

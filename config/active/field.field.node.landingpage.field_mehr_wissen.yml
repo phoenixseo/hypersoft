@@ -1,0 +1,40 @@
+uuid: 4c129f4f-d16f-497f-bc02-12f51c5bb540
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mehr_wissen
+    - node.type.article
+    - node.type.branche
+    - node.type.landingpage
+    - node.type.mt_benefit
+    - node.type.mt_product
+    - node.type.mt_service
+    - node.type.page
+id: node.landingpage.field_mehr_wissen
+field_name: field_mehr_wissen
+entity_type: node
+bundle: landingpage
+label: 'Mehr Wissen'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      article: article
+      mt_benefit: mt_benefit
+      branche: branche
+      landingpage: landingpage
+      mt_product: mt_product
+      page: page
+      mt_service: mt_service
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: article
+field_type: entity_reference

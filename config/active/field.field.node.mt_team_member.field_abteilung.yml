@@ -1,0 +1,29 @@
+uuid: 43631ca8-1eee-45a8-aae6-c5e9fa2c79fd
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_abteilung
+    - node.type.mt_team_member
+    - taxonomy.vocabulary.team_kategorie
+id: node.mt_team_member.field_abteilung
+field_name: field_abteilung
+entity_type: node
+bundle: mt_team_member
+label: Abteilung
+description: 'Zutreffende Abteilung(en) ankreuzen'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      team_kategorie: team_kategorie
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

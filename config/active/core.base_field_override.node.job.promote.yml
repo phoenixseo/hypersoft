@@ -1,0 +1,22 @@
+uuid: 5e33868a-06ba-4833-b9b9-d42c702a6145
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.job
+id: node.job.promote
+field_name: promote
+entity_type: node
+bundle: job
+label: 'Auf der Startseite anzeigen'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

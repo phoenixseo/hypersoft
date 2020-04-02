@@ -1,0 +1,30 @@
+uuid: ca231f17-9bbe-4024-a74a-ee55fccb85e4
+langcode: de
+status: true
+dependencies:
+  config:
+    - views.view.team_members_big_grid
+  module:
+    - system
+    - views
+  theme:
+    - corporateplus
+id: views_block__team_members_big_grid_block_5
+theme: corporateplus
+region: content_top
+weight: -35
+provider: null
+plugin: 'views_block:team_members_big_grid-block_5'
+settings:
+  id: 'views_block:team_members_big_grid-block_5'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /hr/team
+    negate: false
+    context_mapping: {  }

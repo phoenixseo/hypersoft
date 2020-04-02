@@ -1,0 +1,29 @@
+uuid: 6c5eb88d-0946-4c9b-ab9d-7cf4e21a0ea9
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_connection_typ
+    - node.type.connection
+    - taxonomy.vocabulary.connection_typ
+id: node.connection.field_connection_typ
+field_name: field_connection_typ
+entity_type: node
+bundle: connection
+label: 'Connection Typ'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      connection_typ: connection_typ
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

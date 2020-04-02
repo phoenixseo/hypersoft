@@ -1,0 +1,38 @@
+uuid: 935be407-3a9e-4a02-b50b-43e38b486bfa
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.knol.body
+    - field.field.node.knol.field_knolclass
+    - node.type.knol
+  module:
+    - text
+    - user
+id: node.knol.default
+targetEntityType: node
+bundle: knol
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_knolclass:
+    weight: 1
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

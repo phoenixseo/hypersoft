@@ -1,0 +1,17 @@
+uuid: 55c5cd2d-8bfd-42fc-a9a6-660a53896e5a
+langcode: de
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Download
+type: download
+description: 'URL Path: Automatisch. Ein Download für Besucher der Website.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

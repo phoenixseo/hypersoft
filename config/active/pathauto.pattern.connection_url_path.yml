@@ -1,0 +1,22 @@
+uuid: baf3efff-e8ab-4a79-9549-7b62689e6362
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+id: connection_url_path
+label: 'Connection URL Path'
+type: 'canonical_entities:node'
+pattern: '/connect/[node:title]'
+selection_criteria:
+  f6bdf9d7-bb99-4df3-a029-c32fe7140374:
+    id: node_type
+    bundles:
+      connection: connection
+    negate: false
+    context_mapping:
+      node: node
+    uuid: f6bdf9d7-bb99-4df3-a029-c32fe7140374
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,31 @@
+uuid: 766aa04a-8595-4a10-8343-25d60ee39a0e
+langcode: de
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:14a573c4-87da-41a7-8a29-390e6a0d23fc'
+  module:
+    - block_content
+    - system
+  theme:
+    - corporateplus
+id: jobboardtextuberhypersoft
+theme: corporateplus
+region: content
+weight: -41
+provider: null
+plugin: 'block_content:14a573c4-87da-41a7-8a29-390e6a0d23fc'
+settings:
+  id: 'block_content:14a573c4-87da-41a7-8a29-390e6a0d23fc'
+  label: 'Job-Board: Text über Hypersoft'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/hr/jobs/*'
+    negate: false
+    context_mapping: {  }

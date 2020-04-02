@@ -1,0 +1,8 @@
+uuid: 1bb13b36-e3e3-40a1-a818-c5116765093e
+langcode: de
+status: true
+dependencies: {  }
+name: KnolClass
+vid: knolclass
+description: 'Knowledge Kategorie'
+weight: 0

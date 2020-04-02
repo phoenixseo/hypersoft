@@ -1,0 +1,25 @@
+uuid: 288747c1-0653-41f1-8a94-ae0e42bf6b3e
+langcode: de
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:59b233aa-5d07-4705-b4c7-acb8ecca7b32'
+  module:
+    - block_content
+  theme:
+    - corporateplus
+id: calltoactionfooter
+theme: corporateplus
+region: footer_top_first
+weight: 0
+provider: null
+plugin: 'block_content:59b233aa-5d07-4705-b4c7-acb8ecca7b32'
+settings:
+  id: 'block_content:59b233aa-5d07-4705-b4c7-acb8ecca7b32'
+  label: 'Call to action footer'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

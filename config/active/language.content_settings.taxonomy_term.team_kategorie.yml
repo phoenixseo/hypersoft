@@ -1,0 +1,11 @@
+uuid: f77dc76c-6124-48df-ba86-3213dc894b74
+langcode: de
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.team_kategorie
+id: taxonomy_term.team_kategorie
+target_entity_type_id: taxonomy_term
+target_bundle: team_kategorie
+default_langcode: site_default
+language_alterable: false

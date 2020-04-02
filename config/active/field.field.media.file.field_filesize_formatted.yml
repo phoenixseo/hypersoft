@@ -1,0 +1,23 @@
+uuid: c742a093-8766-40ff-93f0-3c1347203e84
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_filesize_formatted
+    - media.type.file
+id: media.file.field_filesize_formatted
+field_name: field_filesize_formatted
+entity_type: media
+bundle: file
+label: 'FileSize Formatted'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: '&nbsp; Bytes'
+field_type: integer

@@ -3,11 +3,30 @@ langcode: de
 status: true
 dependencies:
   config:
+    - field.field.media.file.field_filesize_formatted
     - field.field.media.file.field_media_file
+    - field.field.media.file.field_mime_type
     - media.type.file
   module:
+    - field_group
     - file
     - path
+third_party_settings:
+  field_group:
+    group_automatisch:
+      children:
+        - field_mime_type
+        - field_filesize_formatted
+      parent_name: ''
+      weight: 2
+      format_type: fieldset
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: 'Diese Felder werden automatisch beim Speichern befüllt.'
+        required_fields: true
+      label: Automatisch
 _core:
   default_config_hash: 50n0D6KiBgpTONc-n8sPE24kUJQgu1UafJ2Vshd0q2I
 id: media.file.default
@@ -17,27 +36,50 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_filesize_formatted:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
   field_media_file:
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
-    weight: 0
+    weight: 1
+    region: content
+  field_mime_type:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   langcode:
     type: language_select
-    weight: 2
+    weight: 4
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -45,7 +87,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 100
+    weight: 8
     region: content
     third_party_settings: {  }
   uid:
@@ -55,7 +97,7 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     region: content
     third_party_settings: {  }
-hidden:
-  name: true
+hidden: {  }

@@ -1,0 +1,22 @@
+uuid: b253f1e7-4245-411b-8f8a-ad134fda03cc
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+id: history_url_path
+label: 'History URL Path'
+type: 'canonical_entities:node'
+pattern: '/intl/history/[node:title]'
+selection_criteria:
+  3d2a6ed8-dcdd-4748-89b0-3d5285fd666d:
+    id: node_type
+    bundles:
+      history: history
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 3d2a6ed8-dcdd-4748-89b0-3d5285fd666d
+selection_logic: and
+weight: -5
+relationships: {  }

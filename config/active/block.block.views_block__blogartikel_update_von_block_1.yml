@@ -1,0 +1,33 @@
+uuid: 4ba7019c-4e4b-4b45-a9bf-527474a0da83
+langcode: de
+status: true
+dependencies:
+  config:
+    - views.view.blogartikel_update_von
+  module:
+    - node
+    - views
+  theme:
+    - corporateplus
+id: views_block__blogartikel_update_von_block_1
+theme: corporateplus
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:blogartikel_update_von-block_1'
+settings:
+  id: 'views_block:blogartikel_update_von-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

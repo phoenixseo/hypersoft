@@ -3,10 +3,14 @@ langcode: de
 status: true
 dependencies:
   config:
+    - entity_browser.browser.browse_files_modal
     - field.field.node.landingpage.body
     - field.field.node.landingpage.field_keywords
+    - field.field.node.landingpage.field_mehr_wissen
+    - field.field.node.landingpage.field_mt_banner_image
     - node.type.landingpage
   module:
+    - entity_browser
     - field_group
     - path
     - text
@@ -16,7 +20,7 @@ third_party_settings:
       children:
         - field_keywords
       parent_name: ''
-      weight: 1
+      weight: 2
       format_type: details
       format_settings:
         id: ''
@@ -38,6 +42,7 @@ content:
       rows: 9
       summary_rows: 3
       placeholder: ''
+      show_summary: false
     third_party_settings: {  }
     region: content
   created:
@@ -51,6 +56,30 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
+    region: content
+  field_mehr_wissen:
+    weight: 12
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_mt_banner_image:
+    weight: 1
+    settings:
+      entity_browser: browse_files_modal
+      field_widget_remove: true
+      selection_mode: selection_edit
+      preview_image_style: thumbnail
+      field_widget_edit: true
+      field_widget_replace: false
+      open: false
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_browser_file
     region: content
   langcode:
     type: language_select
@@ -101,6 +130,12 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     region: content
+    third_party_settings: {  }
+  url_redirects:
+    weight: 11
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden: {  }

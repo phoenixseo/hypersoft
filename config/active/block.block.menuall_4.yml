@@ -1,0 +1,33 @@
+uuid: e9f2b031-74cd-4122-a116-a21ad18d35ae
+langcode: de
+status: true
+dependencies:
+  config:
+    - system.menu.menue-all
+  module:
+    - menu_block
+    - system
+  theme:
+    - corporateplus
+id: menuall_4
+theme: corporateplus
+region: banner
+weight: -39
+provider: null
+plugin: 'menu_block:menue-all'
+settings:
+  id: 'menu_block:menue-all'
+  label: 'Menü-All fixiert auf Produkte > Zubehör'
+  provider: menu_block
+  label_display: '0'
+  level: 2
+  depth: 1
+  expand: 0
+  parent: 'menue-all:menu_link_content:2ace0cd4-c9fa-47e9-b649-931c99381f87'
+  suggestion: menue_all
+visibility:
+  request_path:
+    id: request_path
+    pages: '/prd*'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,20 @@
+uuid: 2c4f28b0-18e5-4470-9f90-4f1ed2f5cdf3
+langcode: de
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_job_start
+field_name: field_job_start
+entity_type: node
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

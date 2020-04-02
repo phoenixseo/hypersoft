@@ -1,0 +1,10 @@
+uuid: cd07b49c-7e34-46de-b716-bf2864911a2f
+langcode: de
+status: true
+dependencies:
+  module:
+    - media
+id: media.download_file_ansicht
+label: 'Download File Ansicht'
+targetEntityType: media
+cache: true

@@ -1,0 +1,30 @@
+uuid: 99dd436d-145e-4c99-8f76-a3326330fc1d
+langcode: de
+status: true
+dependencies:
+  config:
+    - views.view.blog_uebersicht
+  module:
+    - system
+    - views
+  theme:
+    - corporateplus
+id: views_block__blog_uebersicht_block_1
+theme: corporateplus
+region: featured_top
+weight: -43
+provider: null
+plugin: 'views_block:blog_uebersicht-block_1'
+settings:
+  id: 'views_block:blog_uebersicht-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /blog
+    negate: false
+    context_mapping: {  }

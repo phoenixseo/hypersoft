@@ -1,0 +1,46 @@
+uuid: ffe27ad4-758f-4c84-a5d1-0dde4dfe6416
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.jobbundle.field_job_aufgaben
+    - field.field.paragraph.jobbundle.field_job_benefits
+    - field.field.paragraph.jobbundle.field_job_description
+    - field.field.paragraph.jobbundle.field_job_qualifikation
+    - paragraphs.paragraphs_type.jobbundle
+  module:
+    - text
+id: paragraph.jobbundle.default
+targetEntityType: paragraph
+bundle: jobbundle
+mode: default
+content:
+  field_job_aufgaben:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_job_benefits:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_job_description:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_job_qualifikation:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

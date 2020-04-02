@@ -1,0 +1,19 @@
+uuid: 6426fa38-0bcf-4693-b71b-047e8c15e64e
+langcode: de
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_job_description
+field_name: field_job_description
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

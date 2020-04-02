@@ -1,0 +1,19 @@
+uuid: ee6ac792-0006-4e29-9f3c-c63755ccd349
+langcode: de
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_job_qualifikation
+field_name: field_job_qualifikation
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,22 @@
+uuid: 042fcfab-d52a-40ca-8f69-7d11808bddb8
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+id: product_url_path
+label: 'Product URL Path'
+type: 'canonical_entities:node'
+pattern: '/prd/[node:field_mt_collections]/[node:title]'
+selection_criteria:
+  7d35e50f-2ef9-4e3b-8c97-08a1015d79d8:
+    id: node_type
+    bundles:
+      mt_product: mt_product
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 7d35e50f-2ef9-4e3b-8c97-08a1015d79d8
+selection_logic: and
+weight: -5
+relationships: {  }

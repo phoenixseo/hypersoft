@@ -1,0 +1,30 @@
+uuid: 00f5ead2-0c59-4efd-b71d-5b8c575e53ac
+langcode: de
+status: true
+dependencies:
+  config:
+    - views.view.branchen
+  module:
+    - system
+    - views
+  theme:
+    - corporateplus
+id: views_block__branchen_block_2
+theme: corporateplus
+region: content_bottom_second
+weight: -41
+provider: null
+plugin: 'views_block:branchen-block_2'
+settings:
+  id: 'views_block:branchen-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '/branche*'
+    negate: false
+    context_mapping: {  }

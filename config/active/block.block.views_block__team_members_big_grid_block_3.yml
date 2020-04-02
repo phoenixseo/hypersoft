@@ -1,0 +1,30 @@
+uuid: 2c70dec5-c7e5-459e-91a2-0d19cb69658b
+langcode: de
+status: true
+dependencies:
+  config:
+    - views.view.team_members_big_grid
+  module:
+    - system
+    - views
+  theme:
+    - corporateplus
+id: views_block__team_members_big_grid_block_3
+theme: corporateplus
+region: content_top
+weight: -39
+provider: null
+plugin: 'views_block:team_members_big_grid-block_3'
+settings:
+  id: 'views_block:team_members_big_grid-block_3'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /hr/lead
+    negate: false
+    context_mapping: {  }

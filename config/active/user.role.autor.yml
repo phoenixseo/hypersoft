@@ -1,0 +1,9 @@
+uuid: 49047ef8-c8ee-452c-a5ea-2f8cc7b4698c
+langcode: de
+status: true
+dependencies: {  }
+id: autor
+label: Autor
+weight: -8
+is_admin: null
+permissions: {  }

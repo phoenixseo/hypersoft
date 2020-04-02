@@ -1,0 +1,25 @@
+uuid: 8bdc7080-39f1-4b4b-9335-8e129d2fb35e
+langcode: de
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:cd0e161b-c2fa-4da7-aba0-fbe7ac35df5c'
+  module:
+    - block_content
+  theme:
+    - corporateplus
+id: headertopnavelements
+theme: corporateplus
+region: header_top_second
+weight: 0
+provider: null
+plugin: 'block_content:cd0e161b-c2fa-4da7-aba0-fbe7ac35df5c'
+settings:
+  id: 'block_content:cd0e161b-c2fa-4da7-aba0-fbe7ac35df5c'
+  label: 'Header Top - Nav Elements'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

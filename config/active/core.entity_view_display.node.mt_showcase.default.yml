@@ -5,16 +5,16 @@ dependencies:
   config:
     - field.field.node.mt_showcase.body
     - field.field.node.mt_showcase.field_image
+    - field.field.node.mt_showcase.field_kundenstimmen
     - field.field.node.mt_showcase.field_mt_banner_image
     - field.field.node.mt_showcase.field_mt_clients_tags
     - field.field.node.mt_showcase.field_mt_content_collapses
+    - field.field.node.mt_showcase.field_mt_highlight
     - field.field.node.mt_showcase.field_mt_showcase_tags
-    - field.field.node.mt_showcase.field_mt_slideshow
-    - field.field.node.mt_showcase.field_mt_slideshow_image
-    - field.field.node.mt_showcase.field_mt_slideshow_text
     - field.field.node.mt_showcase.field_mt_subheader_body
     - field.field.node.mt_showcase.field_mt_subtitle
     - field.field.node.mt_showcase.field_mt_video
+    - field.field.node.mt_showcase.field_seitenabschnitte
     - image.style.large
     - node.type.mt_showcase
   module:
@@ -23,7 +23,6 @@ dependencies:
     - lazy
     - text
     - user
-    - video_embed_field
 id: node.mt_showcase.default
 targetEntityType: node
 bundle: mt_showcase
@@ -32,7 +31,7 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 4
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -47,25 +46,17 @@ content:
         lazy_image: '1'
     type: image
     region: content
-  field_mt_clients_tags:
-    weight: 7
-    label: hidden
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_mt_content_collapses:
-    type: entity_reference_revisions_entity_view
-    weight: 5
+  field_mt_highlight:
+    weight: 4
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
     region: content
   field_mt_showcase_tags:
-    weight: 6
+    weight: 8
     label: hidden
     settings:
       link: true
@@ -79,35 +70,21 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
-  field_mt_subtitle:
-    weight: 1
+  field_seitenabschnitte:
+    weight: 5
     label: hidden
     settings:
-      link_to_entity: false
+      view_mode: default
+      link: ''
     third_party_settings: {  }
-    type: string
+    type: entity_reference_revisions_entity_view
     region: content
-  field_mt_video:
-    weight: 3
-    label: hidden
-    settings:
-      image_style: large
-      link_image_to: provider
-      responsive: true
-      width: 854
-      height: 480
-      autoplay: false
-    third_party_settings: {  }
-    type: video_embed_field_lazyload
-    region: content
-  links:
-    weight: 8
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
+  field_kundenstimmen: true
   field_mt_banner_image: true
-  field_mt_slideshow: true
-  field_mt_slideshow_image: true
-  field_mt_slideshow_text: true
+  field_mt_clients_tags: true
+  field_mt_content_collapses: true
+  field_mt_subtitle: true
+  field_mt_video: true
   langcode: true
+  links: true

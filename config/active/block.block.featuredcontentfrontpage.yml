@@ -1,0 +1,31 @@
+uuid: 904e2c7e-1ef5-48f8-9672-b4a28ad8a5fc
+langcode: de
+status: true
+dependencies:
+  content:
+    - 'block_content:mt_if_block:a37733bd-2b75-4918-8736-7e5dacf31295'
+  module:
+    - block_content
+    - system
+  theme:
+    - corporateplus
+id: featuredcontentfrontpage
+theme: corporateplus
+region: content_top
+weight: -31
+provider: null
+plugin: 'block_content:a37733bd-2b75-4918-8736-7e5dacf31295'
+settings:
+  id: 'block_content:a37733bd-2b75-4918-8736-7e5dacf31295'
+  label: 'Featured Content - Frontpage'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

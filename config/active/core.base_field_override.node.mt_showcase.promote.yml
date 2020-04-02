@@ -1,0 +1,22 @@
+uuid: 3c2b5122-cf84-4d7b-b193-3de63ed26317
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.mt_showcase
+id: node.mt_showcase.promote
+field_name: promote
+entity_type: node
+bundle: mt_showcase
+label: 'Auf der Startseite anzeigen'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

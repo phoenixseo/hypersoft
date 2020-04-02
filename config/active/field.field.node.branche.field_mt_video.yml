@@ -1,0 +1,25 @@
+uuid: 19f52878-3888-4680-9400-bd49849c1095
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_video
+    - node.type.branche
+  module:
+    - video_embed_field
+id: node.branche.field_mt_video
+field_name: field_mt_video
+entity_type: node
+bundle: branche
+label: 'Video URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    vimeo: vimeo
+    youtube: youtube
+    youtube_playlist: '0'
+field_type: video_embed_field

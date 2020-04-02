@@ -1,0 +1,25 @@
+uuid: 23c85e85-2afa-44cf-b5ce-372b0e6c66b8
+langcode: de
+status: true
+dependencies:
+  config:
+    - system.menu.themen-menue
+  module:
+    - system
+  theme:
+    - corporateplus
+id: themenmenu
+theme: corporateplus
+region: footer_fourth
+weight: -35
+provider: null
+plugin: 'system_menu_block:themen-menue'
+settings:
+  id: 'system_menu_block:themen-menue'
+  label: Kassensystem
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

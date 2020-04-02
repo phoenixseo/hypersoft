@@ -1,0 +1,31 @@
+uuid: 85ac602f-4358-497c-8f86-20ba07fef282
+langcode: de
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:98ab9d18-6e05-4edf-a999-090ac7b0668c'
+  module:
+    - block_content
+    - system
+  theme:
+    - corporateplus
+id: twitterfeedblock
+theme: corporateplus
+region: sidebar_second
+weight: -36
+provider: null
+plugin: 'block_content:98ab9d18-6e05-4edf-a999-090ac7b0668c'
+settings:
+  id: 'block_content:98ab9d18-6e05-4edf-a999-090ac7b0668c'
+  label: 'Twitter Feed Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /connect/twitter
+    negate: false
+    context_mapping: {  }

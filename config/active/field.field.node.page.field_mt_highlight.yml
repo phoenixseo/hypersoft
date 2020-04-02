@@ -1,0 +1,92 @@
+uuid: efaeb4db-7ecd-4372-aeb8-86390732664a
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_highlight
+    - node.type.page
+    - paragraphs.paragraphs_type.mt_highlight
+    - paragraphs.paragraphs_type.sas_bild
+    - paragraphs.paragraphs_type.sas_media_object
+    - paragraphs.paragraphs_type.sas_text
+    - paragraphs.paragraphs_type.sas_video
+    - paragraphs.paragraphs_type.sas_zitat
+  module:
+    - entity_reference_revisions
+id: node.page.field_mt_highlight
+field_name: field_mt_highlight
+entity_type: node
+bundle: page
+label: Highlight
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      mt_highlight: mt_highlight
+      sas_bild: sas_bild
+      sas_media_object: sas_media_object
+      sas_text: sas_text
+      sas_video: sas_video
+      sas_zitat: sas_zitat
+    target_bundles_drag_drop:
+      jobbundle:
+        weight: 19
+        enabled: false
+      mt_collapse:
+        weight: 20
+        enabled: false
+      mt_dropdown:
+        weight: 21
+        enabled: false
+      mt_fancy_linked_image:
+        weight: 22
+        enabled: false
+      mt_fancy_tab:
+        weight: 23
+        enabled: false
+      mt_featured_linked_text_tile:
+        weight: 24
+        enabled: false
+      mt_highlight:
+        enabled: true
+        weight: 25
+      mt_icon_features:
+        weight: 26
+        enabled: false
+      mt_main_slideshow_slide:
+        weight: 27
+        enabled: false
+      mt_map_location:
+        weight: 28
+        enabled: false
+      mt_media_tab:
+        weight: 29
+        enabled: false
+      mt_tab:
+        weight: 30
+        enabled: false
+      mt_video_gallery_slide:
+        weight: 31
+        enabled: false
+      sas_bild:
+        enabled: true
+        weight: 32
+      sas_media_object:
+        enabled: true
+        weight: 33
+      sas_text:
+        enabled: true
+        weight: 34
+      sas_video:
+        enabled: true
+        weight: 35
+      sas_zitat:
+        enabled: true
+        weight: 36
+field_type: entity_reference_revisions

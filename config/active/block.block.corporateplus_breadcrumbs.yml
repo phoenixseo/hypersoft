@@ -11,7 +11,7 @@ _core:
 id: corporateplus_breadcrumbs
 theme: corporateplus
 region: highlighted
-weight: -62
+weight: -38
 provider: null
 plugin: system_breadcrumb_block
 settings:

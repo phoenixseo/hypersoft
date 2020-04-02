@@ -1,0 +1,23 @@
+uuid: 2eba472d-f0e7-4aaa-98cb-8e05138783c4
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_connections
+    - node.type.connection
+id: node.connection.field_connections
+field_name: field_connections
+entity_type: node
+bundle: connection
+label: Connections
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

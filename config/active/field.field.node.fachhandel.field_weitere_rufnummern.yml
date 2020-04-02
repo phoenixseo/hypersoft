@@ -1,0 +1,21 @@
+uuid: a8d4fc31-6453-47c8-bacd-6b32ed4f387b
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weitere_rufnummern
+    - node.type.fachhandel
+  module:
+    - telephone
+id: node.fachhandel.field_weitere_rufnummern
+field_name: field_weitere_rufnummern
+entity_type: node
+bundle: fachhandel
+label: 'Weitere Rufnummern'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

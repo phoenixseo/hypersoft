@@ -1,0 +1,54 @@
+uuid: 1a4db5f6-10eb-475b-8138-384a3078bd02
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.download.body
+    - field.field.node.download.field_dl_media
+    - field.field.node.download.field_image
+    - image.style.full_width
+    - node.type.download
+  module:
+    - image
+    - lazy
+    - text
+    - user
+id: node.download.default
+targetEntityType: node
+bundle: download
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_dl_media:
+    type: entity_reference_entity_view
+    weight: 2
+    label: above
+    settings:
+      view_mode: download_file_ansicht
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: full_width
+      image_link: ''
+    third_party_settings:
+      lazy:
+        lazy_image: '1'
+    type: image
+    region: content
+  links:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

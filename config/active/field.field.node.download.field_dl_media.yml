@@ -1,0 +1,33 @@
+uuid: 71b42dec-6b87-474b-a99e-120a33233301
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dl_media
+    - media.type.file
+    - media.type.image
+    - media.type.remote_video
+    - node.type.download
+id: node.download.field_dl_media
+field_name: field_dl_media
+entity_type: node
+bundle: download
+label: 'DL Media'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      file: file
+      image: image
+      remote_video: remote_video
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: file
+field_type: entity_reference

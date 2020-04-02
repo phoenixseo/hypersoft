@@ -1,0 +1,30 @@
+uuid: b795ebab-7fc4-4e2b-9b48-a477569caca1
+langcode: de
+status: true
+dependencies:
+  config:
+    - views.view.downloads
+  module:
+    - system
+    - views
+  theme:
+    - corporateplus
+id: views_block__downloads_block_1
+theme: corporateplus
+region: featured_top
+weight: -40
+provider: null
+plugin: 'views_block:downloads-block_1'
+settings:
+  id: 'views_block:downloads-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /download
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 2ad59844-5780-4bb5-b5c2-005eaf90b14f
+langcode: de
+status: true
+dependencies:
+  config:
+    - views.view.mehr_wissen
+  module:
+    - system
+    - views
+  theme:
+    - corporateplus
+id: views_block__mehr_wissen_block_1
+theme: corporateplus
+region: content
+weight: -29
+provider: null
+plugin: 'views_block:mehr_wissen-block_1'
+settings:
+  id: 'views_block:mehr_wissen-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: /blog
+    negate: true
+    context_mapping: {  }

@@ -1,0 +1,62 @@
+uuid: 1e7aca0d-ca34-44f9-83db-b29b4159943b
+langcode: de
+status: true
+dependencies:
+  module:
+    - image_effects
+name: logo_box
+label: 'Logo Box 285x176 (Goldener Schnitt)'
+effects:
+  577f7d02-bdf1-475d-815c-b92a063ba19a:
+    uuid: 577f7d02-bdf1-475d-815c-b92a063ba19a
+    id: image_scale
+    weight: 1
+    data:
+      width: 281
+      height: null
+      upscale: false
+  a821b463-b129-46ee-ad17-b2bc9c641c9c:
+    uuid: a821b463-b129-46ee-ad17-b2bc9c641c9c
+    id: image_scale
+    weight: 2
+    data:
+      width: null
+      height: 172
+      upscale: false
+  6602f594-8a62-4cb6-9330-a4cfe84a3e50:
+    uuid: 6602f594-8a62-4cb6-9330-a4cfe84a3e50
+    id: image_effects_set_canvas
+    weight: 3
+    data:
+      canvas_size: exact
+      exact:
+        width: '283'
+        height: '174'
+        placement: center-center
+        x_offset: 1
+        y_offset: 1
+      relative:
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+      canvas_color: '#FFFFFFFF'
+  c364bc95-b186-4d7a-944b-7e5bf61acf58:
+    uuid: c364bc95-b186-4d7a-944b-7e5bf61acf58
+    id: image_effects_set_canvas
+    weight: 4
+    data:
+      canvas_size: exact
+      exact:
+        width: '285'
+        height: '176'
+        placement: center-center
+        x_offset: 0
+        y_offset: 0
+      relative:
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+      canvas_color: '#FF0000FF'
+pipeline: __default__

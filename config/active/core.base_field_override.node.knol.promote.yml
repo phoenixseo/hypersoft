@@ -1,0 +1,22 @@
+uuid: a1ebb817-f23b-4536-9c7d-c4d645084cd6
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.knol
+id: node.knol.promote
+field_name: promote
+entity_type: node
+bundle: knol
+label: 'Auf der Startseite anzeigen'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

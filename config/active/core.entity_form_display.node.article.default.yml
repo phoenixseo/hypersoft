@@ -5,38 +5,19 @@ dependencies:
   config:
     - entity_browser.browser.browse_files_modal
     - field.field.node.article.body
+    - field.field.node.article.field_artikelkategorie
     - field.field.node.article.field_image
+    - field.field.node.article.field_mehr_hierueber
     - field.field.node.article.field_mt_banner_image
-    - field.field.node.article.field_mt_slideshow
-    - field.field.node.article.field_mt_slideshow_image
-    - field.field.node.article.field_mt_slideshow_text
     - field.field.node.article.field_seitenabschnitte
     - field.field.node.article.field_tags
+    - field.field.node.article.field_update
     - node.type.article
   module:
     - entity_browser
-    - field_group
     - paragraphs
     - path
     - text
-third_party_settings:
-  field_group:
-    group_slideshow:
-      children:
-        - field_mt_slideshow
-        - field_mt_slideshow_text
-        - field_mt_slideshow_image
-      parent_name: ''
-      weight: 7
-      format_type: details
-      format_settings:
-        id: ''
-        classes: ''
-        description: 'Diesen Inhalt in der Slideshow (Startseite) erscheinen lassen.'
-        open: false
-        required_fields: true
-      label: Slideshow
-      region: content
 _core:
   default_config_hash: 7CvVDwPYotAZFBa36mcpMKZOfVRRp_iGuPHpHaavI6E
 id: node.article.default
@@ -46,21 +27,51 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 4
+    weight: 6
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
+      show_summary: false
     third_party_settings: {  }
     region: content
   created:
     type: datetime_timestamp
-    weight: 12
+    weight: 11
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_artikelkategorie:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
   field_image:
     type: entity_browser_file
+    weight: 5
+    settings:
+      entity_browser: browse_files_modal
+      field_widget_remove: true
+      selection_mode: selection_edit
+      preview_image_style: file_entity_browser_thumbnail
+      field_widget_edit: true
+      field_widget_replace: false
+      open: false
+      view_mode: default
+    third_party_settings: {  }
+    region: content
+  field_mehr_hierueber:
+    weight: 8
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_mt_banner_image:
     weight: 3
     settings:
       entity_browser: browse_files_modal
@@ -72,53 +83,11 @@ content:
       open: false
       view_mode: default
     third_party_settings: {  }
-    region: content
-  field_mt_banner_image:
-    weight: 1
-    settings:
-      entity_browser: browse_files_modal
-      field_widget_remove: true
-      selection_mode: selection_edit
-      preview_image_style: file_entity_browser_thumbnail
-      field_widget_edit: true
-      field_widget_replace: false
-      open: false
-      view_mode: default
-    third_party_settings: {  }
     type: entity_browser_file
-    region: content
-  field_mt_slideshow:
-    weight: 10
-    settings:
-      display_label: true
-    third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
-  field_mt_slideshow_image:
-    weight: 12
-    settings:
-      entity_browser: browse_files_modal
-      field_widget_remove: true
-      selection_mode: selection_edit
-      preview_image_style: file_entity_browser_thumbnail
-      field_widget_edit: true
-      field_widget_replace: false
-      open: false
-      view_mode: default
-    third_party_settings: {  }
-    type: entity_browser_file
-    region: content
-  field_mt_slideshow_text:
-    weight: 11
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea
     region: content
   field_seitenabschnitte:
     type: paragraphs
-    weight: 5
+    weight: 7
     settings:
       title: Seitenabschnitt
       title_plural: Seitenabschnitte
@@ -137,23 +106,30 @@ content:
     region: content
   field_tags:
     type: entity_reference_autocomplete_tags
-    weight: 6
+    weight: 9
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
+    region: content
+  field_update:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   langcode:
     type: language_select
-    weight: 2
+    weight: 4
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 16
+    weight: 14
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -161,21 +137,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 14
+    weight: 12
     third_party_settings: {  }
     region: content
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 17
+    weight: 15
     third_party_settings: {  }
     region: content
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 13
     third_party_settings: {  }
     region: content
   title:
@@ -193,11 +169,17 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 11
+    weight: 10
+    region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  url_redirects:
+    weight: 16
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }

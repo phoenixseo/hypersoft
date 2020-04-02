@@ -1,0 +1,30 @@
+uuid: 4534cab5-ccdb-4b5e-a80e-6c076cc38a39
+langcode: de
+status: true
+dependencies:
+  config:
+    - views.view.vertrieb_hypersoft_direkt
+  module:
+    - system
+    - views
+  theme:
+    - corporateplus
+id: views_block__vertrieb_hypersoft_direkt_block_4
+theme: corporateplus
+region: content
+weight: -30
+provider: null
+plugin: 'views_block:vertrieb_hypersoft_direkt-block_4'
+settings:
+  id: 'views_block:vertrieb_hypersoft_direkt-block_4'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /vertrieb/ch
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,33 @@
+uuid: 128b72a7-aed3-4960-b0ad-c0594d52b5fd
+langcode: de
+status: true
+dependencies:
+  content:
+    - 'block_content:mt_tabs_block:ef75ff4d-5049-4e15-91f2-89e64289799e'
+  module:
+    - block_content
+    - node
+  theme:
+    - corporateplus
+id: sidebartabs
+theme: corporateplus
+region: sidebar_second
+weight: -41
+provider: null
+plugin: 'block_content:ef75ff4d-5049-4e15-91f2-89e64289799e'
+settings:
+  id: 'block_content:ef75ff4d-5049-4e15-91f2-89e64289799e'
+  label: 'Sidebar tabs'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      mt_product: mt_product
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -4,28 +4,24 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.job.body
+    - field.field.node.job.field_job_start
+    - field.field.node.job.field_job_switch
+    - field.field.node.job.field_jobbundle
     - node.type.job
   module:
-    - text
     - user
 id: node.job.teaser
 targetEntityType: node
 bundle: job
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
   links:
     weight: 100
     settings: {  }
     third_party_settings: {  }
     region: content
 hidden:
+  field_job_start: true
+  field_job_switch: true
+  field_jobbundle: true
   langcode: true

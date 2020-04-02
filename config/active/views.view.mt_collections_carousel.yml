@@ -17,7 +17,6 @@ description: ''
 tag: ''
 base_table: taxonomy_term_field_data
 base_field: tid
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -260,6 +259,9 @@ display:
           entity_type: taxonomy_term
           entity_field: vid
           plugin_id: bundle
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
         langcode:
           id: langcode
           table: taxonomy_term_field_data
@@ -270,6 +272,7 @@ display:
           operator: in
           value:
             '***LANGUAGE_language_content***': '***LANGUAGE_language_content***'
+            de: de
           group: 1
           exposed: false
           expose:
@@ -285,6 +288,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -325,6 +330,8 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -355,7 +362,7 @@ display:
           entity_type: taxonomy_term
           entity_field: weight
           plugin_id: standard
-      title: 'Product Groups'
+      title: 'Hypersoft Produkte'
       header: {  }
       footer: {  }
       empty: {  }
@@ -365,8 +372,8 @@ display:
       css_class: 'view-mt-carousel row view-collection-grid view-collections-carousel'
       use_more: true
       use_more_always: true
-      use_more_text: 'Explore now'
-      link_url: product-groups
+      use_more_text: Produktübersicht
+      link_url: prod
       link_display: custom_url
     cache_metadata:
       max-age: -1
@@ -414,6 +421,8 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -430,10 +439,10 @@ display:
           entity_field: status
           plugin_id: boolean
       block_category: ProductGroup
+      rendering_language: de
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - user.permissions
       tags:

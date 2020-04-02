@@ -1,0 +1,35 @@
+uuid: e46447f9-0671-44c4-855c-95d3ab4526bf
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.download.body
+    - field.field.node.download.field_dl_media
+    - field.field.node.download.field_image
+    - node.type.download
+  module:
+    - text
+    - user
+id: node.download.teaser
+targetEntityType: node
+bundle: download
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_dl_media: true
+  field_image: true
+  langcode: true

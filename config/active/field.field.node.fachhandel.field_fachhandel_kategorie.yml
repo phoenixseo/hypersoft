@@ -1,0 +1,29 @@
+uuid: f07299b4-4c49-462a-bcd5-0f747338616b
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fachhandel_kategorie
+    - node.type.fachhandel
+    - taxonomy.vocabulary.fachhandel_kategorie
+id: node.fachhandel.field_fachhandel_kategorie
+field_name: field_fachhandel_kategorie
+entity_type: node
+bundle: fachhandel
+label: 'Fachhandel Kategorie'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      fachhandel_kategorie: fachhandel_kategorie
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

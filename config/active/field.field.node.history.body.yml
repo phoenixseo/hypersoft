@@ -1,0 +1,23 @@
+uuid: 4c8c7674-b675-484e-b770-e26e718b95b9
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.history
+  module:
+    - text
+id: node.history.body
+field_name: body
+entity_type: node
+bundle: history
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

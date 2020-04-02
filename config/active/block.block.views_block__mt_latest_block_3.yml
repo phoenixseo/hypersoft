@@ -1,5 +1,5 @@
-uuid: 510c84d9-745e-44f8-a60b-911d61178573
-langcode: en
+uuid: 915403b1-6bd4-4b8c-bac2-5145da83b00a
+langcode: de
 status: true
 dependencies:
   config:
@@ -16,9 +16,9 @@ provider: null
 plugin: 'views_block:mt_latest-block_3'
 settings:
   id: 'views_block:mt_latest-block_3'
-  label: ''
+  label: Services
   provider: views
   label_display: '0'
-  views_label: ''
+  views_label: Services
   items_per_page: none
 visibility: {  }

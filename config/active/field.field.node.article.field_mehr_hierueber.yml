@@ -1,0 +1,62 @@
+uuid: e282b1c7-8f5c-481c-9cad-d755e00b29e5
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mehr_hierueber
+    - node.type.article
+    - node.type.branche
+    - node.type.connection
+    - node.type.download
+    - node.type.fachhandel
+    - node.type.history
+    - node.type.job
+    - node.type.knol
+    - node.type.landingpage
+    - node.type.mt_benefit
+    - node.type.mt_product
+    - node.type.mt_service
+    - node.type.mt_showcase
+    - node.type.mt_slideshow_entry
+    - node.type.mt_team_member
+    - node.type.mt_testimonial
+    - node.type.page
+    - node.type.partner
+id: node.article.field_mehr_hierueber
+field_name: field_mehr_hierueber
+entity_type: node
+bundle: article
+label: 'Mehr hierüber'
+description: 'BlogArtikel Verweis auf andere Inhalte dieser Website'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      article: article
+      mt_benefit: mt_benefit
+      branche: branche
+      connection: connection
+      download: download
+      fachhandel: fachhandel
+      history: history
+      job: job
+      knol: knol
+      landingpage: landingpage
+      partner: partner
+      mt_product: mt_product
+      page: page
+      mt_service: mt_service
+      mt_showcase: mt_showcase
+      mt_slideshow_entry: mt_slideshow_entry
+      mt_team_member: mt_team_member
+      mt_testimonial: mt_testimonial
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: mt_benefit
+field_type: entity_reference

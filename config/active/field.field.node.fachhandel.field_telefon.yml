@@ -1,0 +1,21 @@
+uuid: 1ccb8f49-1d4a-4e30-8952-423d5d89c526
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_telefon
+    - node.type.fachhandel
+  module:
+    - telephone
+id: node.fachhandel.field_telefon
+field_name: field_telefon
+entity_type: node
+bundle: fachhandel
+label: Telefon
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

@@ -1,0 +1,17 @@
+uuid: e16a5549-78f8-490e-8a40-f45c42103ae8
+langcode: de
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Knol
+type: knol
+description: 'Knowledge Artikel, kurz "Knol". Artikel mit Wissenswertem für Besucher zum Themenkreis Kassensystem/Zubehör/Gastronomie.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

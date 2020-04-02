@@ -5,9 +5,10 @@ dependencies:
   config:
     - field.storage.node.field_image
     - image.style.large
+    - image.style.logo_box
     - image.style.medium
-    - node.type.mt_product
     - node.type.mt_showcase
+    - node.type.partner
   module:
     - image
     - node
@@ -19,7 +20,6 @@ description: 'Displays photos using the content type Showcase in a grid style la
 tag: ''
 base_table: node_field_data
 base_field: nid
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -252,6 +252,9 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
         status_extra:
           id: status_extra
           table: node_field_data
@@ -275,6 +278,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -314,6 +319,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -359,7 +366,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Photo Gallery'
+      title: Partner
       header: {  }
       footer: {  }
       empty: {  }
@@ -461,7 +468,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"views-field-field-image\">\n<div class=\"overlay-container\">\n<span class=\"overlay\">\n<a class=\"overlay-target-link\" href=\"{{ path }}\"></a>\n<span class=\"overlay-inner\">\n<a class=\"overlay-icon overlay-icon--button overlay-icon--button-small\" href=\"{{ path }}\"><i class=\"fa fa-link\"></i></a>\n</span>\n</span>\n{{ field_image }}\n</div>\n</div>"
+            text: "<div class=\"views-field-field-image\">\r\n<div class=\"overlay-container\">\r\n<span class=\"overlay\">\r\n<a class=\"overlay-target-link\" href=\"{{ path }}\"></a>\r\n<span class=\"overlay-inner\">\r\n<a class=\"overlay-icon overlay-icon--button overlay-icon--button-small\" href=\"{{ path }}\"><i class=\"fa fa-link\"></i></a>\r\n</span>\r\n</span>\r\n{{ field_image }}\r\n</div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -501,7 +508,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: medium
+            image_style: logo_box
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -524,8 +531,7 @@ display:
           admin_label: ''
           operator: in
           value:
-            mt_product: mt_product
-            mt_showcase: mt_showcase
+            partner: partner
           group: 1
           exposed: false
           expose:
@@ -541,6 +547,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -579,6 +587,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -618,6 +628,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -662,6 +674,8 @@ display:
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''

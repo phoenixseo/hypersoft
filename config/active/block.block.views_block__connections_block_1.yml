@@ -1,4 +1,4 @@
-uuid: 7c6a053f-9f54-4420-a77f-13eb76a4ba47
+uuid: ddc97702-9f7e-4973-bd9e-73619120c16f
 langcode: de
 status: true
 dependencies:
@@ -11,7 +11,7 @@ dependencies:
     - corporateplus
 id: views_block__connections_block_1
 theme: corporateplus
-region: content_top
+region: featured
 weight: 0
 provider: null
 plugin: 'views_block:connections-block_1'

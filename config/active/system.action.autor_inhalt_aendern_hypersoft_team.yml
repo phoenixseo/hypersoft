@@ -1,0 +1,12 @@
+uuid: 56352171-4882-4369-bb80-cff0a317a16d
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+id: autor_inhalt_aendern_hypersoft_team
+label: 'Den Autor des Inhalts ändern: Hypersoft Team'
+type: node
+plugin: node_assign_owner_action
+configuration:
+  owner_uid: '431'

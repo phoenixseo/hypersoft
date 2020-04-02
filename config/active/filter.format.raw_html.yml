@@ -1,8 +1,26 @@
 uuid: cf80cad5-4edb-46a3-9062-a97d7593445f
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - editor
+    - media
 name: 'Raw HTML'
 format: raw_html
-weight: 0
-filters: {  }
+weight: -9
+filters:
+  editor_file_reference:
+    id: editor_file_reference
+    provider: editor
+    status: true
+    weight: 0
+    settings: {  }
+  media_embed:
+    id: media_embed
+    provider: media
+    status: false
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_media_types: {  }
+      allowed_view_modes: {  }

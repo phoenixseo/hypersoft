@@ -4,16 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
-    - field.field.node.page.field_connections
     - field.field.node.page.field_image
     - field.field.node.page.field_mehr_wissen
     - field.field.node.page.field_mt_banner_image
-    - field.field.node.page.field_mt_slideshow
-    - field.field.node.page.field_mt_slideshow_image
-    - field.field.node.page.field_mt_slideshow_text
-    - field.field.node.page.field_mt_subheader_body
+    - field.field.node.page.field_mt_highlight
     - field.field.node.page.field_seitenabschnitte
-    - image.style.large
+    - image.style.full_width
     - node.type.page
   module:
     - entity_reference_revisions
@@ -31,7 +27,7 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 2
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -39,30 +35,24 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: large
+      image_style: full_width
       image_link: ''
     third_party_settings:
       lazy:
         lazy_image: '1'
     type: image
     region: content
-  field_mehr_wissen:
+  field_mt_highlight:
     weight: 4
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_mt_subheader_body:
-    weight: 1
     label: hidden
-    settings: {  }
+    settings:
+      view_mode: default
+      link: ''
     third_party_settings: {  }
-    type: text_default
+    type: entity_reference_revisions_entity_view
     region: content
   field_seitenabschnitte:
-    weight: 3
+    weight: 2
     label: hidden
     settings:
       view_mode: default
@@ -71,14 +61,11 @@ content:
     type: entity_reference_revisions_entity_view
     region: content
   links:
-    weight: 5
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_connections: true
+  field_mehr_wissen: true
   field_mt_banner_image: true
-  field_mt_slideshow: true
-  field_mt_slideshow_image: true
-  field_mt_slideshow_text: true
   langcode: true

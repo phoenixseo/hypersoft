@@ -1,0 +1,31 @@
+uuid: 262951a2-6213-4060-963a-c826fe097cbd
+langcode: de
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:43813b8a-092d-49e1-ad87-2bbabdae9fe1'
+  module:
+    - block_content
+    - system
+  theme:
+    - corporateplus
+id: jobbannerstartseite
+theme: corporateplus
+region: sub_featured
+weight: 0
+provider: null
+plugin: 'block_content:43813b8a-092d-49e1-ad87-2bbabdae9fe1'
+settings:
+  id: 'block_content:43813b8a-092d-49e1-ad87-2bbabdae9fe1'
+  label: 'Job Teaser Startseite'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

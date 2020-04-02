@@ -1,0 +1,21 @@
+uuid: 105be829-ce41-409e-abeb-6a3423553802
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_job_aufgaben
+    - paragraphs.paragraphs_type.jobbundle
+  module:
+    - text
+id: paragraph.jobbundle.field_job_aufgaben
+field_name: field_job_aufgaben
+entity_type: paragraph
+bundle: jobbundle
+label: 'Zu Deinen Aufgaben zählt'
+description: 'Job Tasks (Aufgaben)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

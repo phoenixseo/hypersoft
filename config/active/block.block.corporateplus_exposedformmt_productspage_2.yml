@@ -11,7 +11,7 @@ dependencies:
 id: corporateplus_exposedformmt_productspage_2
 theme: corporateplus
 region: sidebar_first
-weight: -53
+weight: -43
 provider: null
 plugin: 'views_exposed_filter_block:mt_products-page_2'
 settings:

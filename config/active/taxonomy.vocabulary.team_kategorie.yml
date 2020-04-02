@@ -1,0 +1,8 @@
+uuid: 1a539876-e7c9-40c2-8f84-ae62f1904fb4
+langcode: de
+status: true
+dependencies: {  }
+name: Abteilung
+vid: team_kategorie
+description: 'Kategorisierung von Team-Members'
+weight: 0

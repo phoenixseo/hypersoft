@@ -1,0 +1,22 @@
+uuid: 6daf9262-0180-4739-ad39-10fbe83cc4fc
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.mt_slideshow_entry
+id: node.mt_slideshow_entry.promote
+field_name: promote
+entity_type: node
+bundle: mt_slideshow_entry
+label: 'Auf der Startseite anzeigen'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

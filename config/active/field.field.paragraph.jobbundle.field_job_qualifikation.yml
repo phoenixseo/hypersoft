@@ -1,0 +1,21 @@
+uuid: 0e8d8702-c2c7-4489-8890-cbf87cd3c749
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_job_qualifikation
+    - paragraphs.paragraphs_type.jobbundle
+  module:
+    - text
+id: paragraph.jobbundle.field_job_qualifikation
+field_name: field_job_qualifikation
+entity_type: paragraph
+bundle: jobbundle
+label: 'Was Du mitbringen solltest'
+description: 'Job Qualifikation'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

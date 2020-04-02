@@ -1,0 +1,17 @@
+uuid: fe33928d-7314-4983-b560-a5293ce084dc
+langcode: de
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Connection
+type: connection
+description: 'URL Path: Automatisch. Eine Connection ist wie ein Bookmark für wichtige Dinge rund um Hypersoft. Connections werden in einer Übersicht zusammen angezeigt.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,22 @@
+uuid: 89132083-eff4-48c2-b102-e6cca3d6aeb4
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.fachhandel
+id: node.fachhandel.promote
+field_name: promote
+entity_type: node
+bundle: fachhandel
+label: 'Auf der Startseite anzeigen'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

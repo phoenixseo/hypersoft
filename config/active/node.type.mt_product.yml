@@ -8,9 +8,9 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-name: Product
+name: Produkt
 type: mt_product
-description: 'Ein Produkt. Technik-lastiger Inhalt mit sachlicher Beschreibung der Features, Eckdaten, Verlinkung zu Videos, in Langform.'
+description: 'URL Path: Automatisch. Ein Produkt. Technik-lastiger Inhalt mit sachlicher Beschreibung der Features, Eckdaten, Verlinkung zu Videos, in Langform.'
 help: ''
 new_revision: true
 preview_mode: 1

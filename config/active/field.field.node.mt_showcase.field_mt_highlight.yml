@@ -1,0 +1,82 @@
+uuid: 07cb3aa4-480d-440f-8433-3f7616438613
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_highlight
+    - node.type.mt_showcase
+    - paragraphs.paragraphs_type.mt_highlight
+  module:
+    - entity_reference_revisions
+id: node.mt_showcase.field_mt_highlight
+field_name: field_mt_highlight
+entity_type: node
+bundle: mt_showcase
+label: Highlight
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      mt_highlight: mt_highlight
+    target_bundles_drag_drop:
+      jobbundle:
+        weight: 19
+        enabled: false
+      mt_collapse:
+        weight: 20
+        enabled: false
+      mt_dropdown:
+        weight: 21
+        enabled: false
+      mt_fancy_linked_image:
+        weight: 22
+        enabled: false
+      mt_fancy_tab:
+        weight: 23
+        enabled: false
+      mt_featured_linked_text_tile:
+        weight: 24
+        enabled: false
+      mt_highlight:
+        enabled: true
+        weight: 25
+      mt_icon_features:
+        weight: 26
+        enabled: false
+      mt_main_slideshow_slide:
+        weight: 27
+        enabled: false
+      mt_map_location:
+        weight: 28
+        enabled: false
+      mt_media_tab:
+        weight: 29
+        enabled: false
+      mt_tab:
+        weight: 30
+        enabled: false
+      mt_video_gallery_slide:
+        weight: 31
+        enabled: false
+      sas_bild:
+        weight: 32
+        enabled: false
+      sas_media_object:
+        weight: 33
+        enabled: false
+      sas_text:
+        weight: 34
+        enabled: false
+      sas_video:
+        weight: 35
+        enabled: false
+      sas_zitat:
+        weight: 36
+        enabled: false
+field_type: entity_reference_revisions

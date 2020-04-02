@@ -1,0 +1,29 @@
+uuid: 43dcc4b2-b767-404b-a3e0-2e5bb32e1907
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ansprechpartner
+    - node.type.fachhandel
+    - node.type.mt_team_member
+id: node.fachhandel.field_ansprechpartner
+field_name: field_ansprechpartner
+entity_type: node
+bundle: fachhandel
+label: Ansprechpartner
+description: 'Referenz auf ein Team-Member'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      mt_team_member: mt_team_member
+    sort:
+      field: title
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference
