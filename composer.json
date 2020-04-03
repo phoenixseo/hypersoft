@@ -63,7 +63,8 @@
         "drupal/imageapi_optimize": "^2",
         "drupal/simple_timeline": "^1",
         "drupal/gutenberg": "^1",
-        "drupal/views_flipped_table": "^1"
+        "drupal/views_flipped_table": "^1",
+        "drupal/webform": "^5"
     },
     "conflict": {
         "drupal/drupal": "*"
